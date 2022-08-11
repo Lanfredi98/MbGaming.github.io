@@ -1,0 +1,2002 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*! HEADER*/
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    background: #0028be;
+    padding:20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    font-family: 'Nunito', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 1s;
+    color: #fff;
+}
+.logo{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 3em;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: 'Oswald', sans-serif;
+}
+header.abajo .logo,
+header.abajo ul li a{
+    color:#0028be;
+}
+header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+.nav__hamburguer, .nav__close{
+    display: none;
+} 
+/* !FIN HEADER GENERAL 
+
+?INICIO HEADER DEL INDEX
+*/
+.header__index{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    background:transparent;
+    padding:20px;
+}
+.logo__index{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 3em;
+    text-decoration: none;
+    transition: 1s;
+    font-family: 'Oswald', sans-serif;
+}
+.nav__index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__index ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__index ul li {
+    list-style: none;
+}
+.header__index ul li a {
+    font-family: 'Nunito', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 1s;
+    color: black;
+}  
+.header__index  ul li a:hover{
+    color: #fff;
+}
+.header__index .logo__index:hover{
+    color: #fff;
+    transition: 1s;
+}
+header.abajo2 .logo__index,
+header.abajo2 ul li a{
+    color:#0028be;
+}
+header.abajo2{
+    background:#fff;
+    padding: 10px 15px;
+}
+.nav__index .nav__hamburguer{
+    display: none;
+}
+
+
+/*
+!FIN HEADER INDEX Y HEADER GENERAL 
+
+
+?INICIO MAIN
+*/
+main{
+    margin:120px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.noticia__dest{
+    margin-top: 20px;
+    border: 1px solid #001478;
+    box-shadow: 0px 10px 30px #001478;
+    /*/* position:relative */
+    /* grid imagen*/
+    display: flex;
+    flex-direction: column;
+}
+.noticia__title{
+    display: flex;
+    margin: 20px;
+    justify-content: flex-start;
+    padding-left: 5em;
+}
+.noticia__titletext{
+    display: flex;
+    flex-direction:column;
+    text-transform: uppercase;
+    color: #0028be;
+    font-family: 'Oswald';
+    font-size: 5em;
+    font-weight: bold;
+}
+.noticia__titletext--color{
+    color: #001478
+}
+
+/*
+End noticia_title
+
+
+start noticia_info
+
+*/
+.noticia__contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 45px 50px 50px 50px;
+    gap: 2em;
+}
+.noticia__contenido img{
+    height: 20vw;
+    display: flex;
+}
+.noticia__card{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.noticia__card__title, .noticia__card__subtitle{
+    font-family: 'Oswald', sans-serif;   
+    text-transform: uppercase;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.noticia__card__title{
+    font-size: 4.5em;
+    font-weight: 700;
+}
+.noticia__card__subtitle{
+    font-size: 1.2em;
+}
+.noticia__card__parrafo span{
+    margin: 3px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.noticia__card__parrafo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    padding: 20px 20px 20px 40px;
+} 
+
+.noticia__card__boton{
+    width: 78%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: 1px solid #0028be;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #0028be;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+.noticia__card__boton:hover{
+    background-color:#001478;
+    color:#fff;
+    transition: all 800ms ease;
+}
+/*end NOTICIAS
+
+
+start CONTAINER*/
+.container{ 
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.container__card{
+    width: 400px;
+    margin: 20px;
+    border: 1px solid #0028be;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) ;
+    cursor:default;
+    transition: all 400ms ease;
+}
+.container__card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.container__card img{
+    width: 100%;
+    height: 210px;
+}
+.container__card .container__info{
+    padding: 15px;
+    text-align: center;
+}
+.container__card .container__info span{
+    font-weight: 500;
+    font-family: 'Nunito',sans-serif;
+    display: flex;
+    /* font-variant-numeric: oldstyle-nums; */
+}
+.container__card .container__info p{
+    font-family:'Nunito',sans-serif;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.container__card .container__info h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+}
+.container__card .container__info a{
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Oswald',sans-serif;
+    border: 1px solid #0028be;
+    color:#0028be;
+    border-radius:4px;
+    transition: all 400ms ease;
+}
+.container__card .container__info a:hover{
+    background-color:#001478;
+    color:#fff;
+    transition: all 800ms ease;
+}
+
+/*FIN MAIN NOTICIAS
+
+INICIO MAIN INDEX
+*/
+.index__main{
+    position: relative;
+    text-align: left;
+}
+.index__main img{
+    position: relative;
+    width: 100vw;
+    top: -24%;
+    margin-bottom: -6%;
+}
+.index__titulo, .index__subtitulo{
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    position: absolute;
+    left: 8%;
+    color: #fff;  
+    top: 35%;
+}
+.index__titulo{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.index__subtitulo{
+    top:40%;
+    font-size: 2em;
+    font-weight: bolder;
+} 
+
+/* slidetest*/
+
+.slide__noticias{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    position: relative;
+  }
+  .slide__container{
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #0028be;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 0px 10px 30px #001478;
+  }
+  .slide__container .main-card{
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{ /*mueve el elemento cuando checkbox esta checked y el ~ selecciona todoslos items que esten despues*/
+    margin-left: -100%;
+  }
+  .slide__container .main-card .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px); /* mueve la card en ejeY*/
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nunito';
+    color: #0028be;
+    font-weight: bolder;
+  }
+  .cards .card .content .img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover
+  }
+  .card .content .date{
+    display: flex;
+    font-family: 'Oswald',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    align-self: left;
+    padding-left: 4px;
+    color: #000;
+  }
+  .card .content .slide__txt{
+    font-size: 20px;
+    font-family: 'Nunito',sans-serif;
+    color: #0028be;
+    text-align: left;
+    padding: 5px;
+    font-weight: 700;
+  }
+  .slide__container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button label{ /*label style con transicion*/
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #0028be;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .slide__container a{
+    width: 100px;
+    position: relative;
+    left: 48%;
+    font-family: 'Nunito' ,sans-serif;
+    font-size: 1.3em;
+    border: 1px solid #0028be;
+    border-radius: 8px;
+    padding: 4px;
+    color:#0028be;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+  }
+  .slide__container a:hover{
+    background-color:#0028be;
+    color: #fff;
+    transition: all 0.4s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{ /* cambiamos el ancho de los labels segun cual este checked*/
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{/*se ocultalos controles del input*/
+    display:none;
+  }
+/* fin slide  index 
+
+inicio multimedia index*/
+
+.multimedia{
+    width: 1000px;
+    min-height: 20vh;
+    padding: 30px;
+    margin: 60px;
+    display: flex;
+    gap:30px;  
+    border-top:2px solid #000;
+
+    align-self: center;
+}
+
+.multimedia__contenido{
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self:center;
+    
+}
+.multimedia__contenido img{
+    width: 200px;
+    height: 100px; 
+    display: flex;
+    
+}
+.multimedia__contenido p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+.multimedia__contenido--negrita {
+    font-family: 'Nunito',sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+}
+.multimedia__contenido a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #0028be;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+}
+.multimedia__contenido a:hover{
+    background-color:#0028be;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+/* fin multimedia index 
+
+inicio main  seccion GUIAS*/
+
+.main__guias{
+    border: 1px solid #001478;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1250px;
+    height: 450px;
+    padding: 15px;
+    gap: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 30px #001478;
+}
+ .main__guias h2{
+    color: #0028be;
+    font-family: 'Oswald',sans-serif;
+    font-size: 4.5em;
+    font-weight: bolder;
+}
+.main__guias p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.main__tabla__campeones{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4 , auto);
+    grid-template-rows: repeat(10, auto);
+    padding: 20px;
+    grid-template-areas: 
+    "topl topl topl topl "
+    "fiora  darius  renekton  riven"
+    "jungle jungle jungle jungle"
+    "wukong xinzhao khazix  leesin"
+    "mid mid mid mid"
+    "zed ahri diana ziggs"
+    "adc adc  adc   adc"
+    "corki ezreal cait lucian"
+    "support support support support"
+    "yummi thresh rakan nautilus";
+}
+.main__guia span{
+    text-transform: uppercase;
+    color: #0028be;
+    font-weight: bold;
+    font-family: 'Oswald';
+    letter-spacing: 1.2px;
+}
+.main__row{
+    display: flex;
+    flex-direction: row;
+}
+.main__row p{
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px;
+}
+.main__tabla__campeones h3{
+    grid-area: topl;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.fiora{
+    grid-area: fiora;
+}
+.darius{
+    grid-area: darius;
+}
+.renekton{
+    grid-area: renekton;
+}
+.riven{
+    grid-area: riven;
+}
+
+.main__tabla__campeones h4{
+    grid-area: jungle;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.wukong{
+    grid-area: wukong;
+}
+.xinzhao{
+    grid-area: xinzhao;
+}
+.khazix{
+    grid-area: khazix;
+}
+.leesin{
+    grid-area: leesin;
+}
+.main__tabla__campeones h5{
+    grid-area: mid;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.zed{
+    grid-area: zed;
+}
+.ahri{
+    grid-area: ahri;
+}
+.diana{
+    grid-area: diana;
+}
+.ziggs{
+    grid-area: ziggs;
+}
+.main__tabla__campeones h6{
+    grid-area: adc;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.corki{
+    grid-area: corki;
+}
+.ezreal{
+    grid-area: ezreal;
+}
+.cait{
+    grid-area: cait;
+}
+.lucian{
+    grid-area: lucian;
+}
+.main__tabla__campeones .support{
+    grid-area: support;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.yummi{
+    grid-area: yummi;
+}
+.thresh{
+    grid-area: thresh;
+}
+.rakan{
+    grid-area: rakan;
+}
+.nautilus{
+    grid-area: nautilus;
+}
+
+/*
+
+FIN MAIN GUIAS 
+
+
+INICIO MAIN PARCHE
+
+*/
+.parche__portada{
+    display: flex;
+    width: 100%;
+
+}
+.parche__encabezado img{
+    position: relative;
+    width: 100vw;
+    top: -26%; /* consultar como hacerlo con otra medida*/
+    margin-bottom: -7%;
+}
+.parche__titulo{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;    
+    border: 2px solid #0028be;
+    box-shadow: 0px 10px 30px #001478;
+    padding: 20px;
+}
+.parche__titulo p{
+    text-transform: lowercase;
+    font-size: 1.3rem;
+    font-family: 'Nunito',sans-serif;
+}
+.parche__contenido{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #0028be;
+    max-width: 800px;
+    padding: 20px;
+}
+.parche__contenido h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.7em;
+    margin: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.parche__contenido h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #0028be;
+    margin: 10px;
+}
+.parche__contenido img{
+    width: 630px;
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+.parche__contenido p{
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    display: flex;
+    align-self: center;
+}
+.parche__contenido span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #0028be;
+    margin: 10px;
+    display: flex;
+    align-self: center;
+}
+.parche__campeones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    border: 2px solid #0028be;
+    padding: 20px;
+}
+.parche__card{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+.parche__card__campeon {
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 10px 0px 10px 0px;
+}
+.parche__card__cambios{
+    font-family:'Nunito' ,sans-serif;
+    margin: 10px 0px 10px 0px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.parche__card hr{
+    margin-left: 50px;
+}
+.parche__card__habilidades{
+    display: flex;
+    margin: 20px 0px 10px 40px;
+    gap: 20px;
+}
+.parche__card__habilidades img{
+    width: 40px;
+    height: 40px;
+    border-radius:20px;
+}
+.parche__card__habilidades span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+}
+.parche__card__habilidades p{
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+}
+
+/*
+FIN MAIN PARCHE
+
+INICIO MAIN ESPORTS
+
+*/
+.esports__titulo{
+    width: 100%;
+    max-width: 1250px;
+    font-family: 'Oswald' ,sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.esports__titulo p{
+    font-size: 2rem;
+    color: #0028be;
+}
+.esports__titulo h1{
+    color: #001478;
+    font-size: 4.4rem;
+    margin-left: 20px;
+}
+.esports__parrafo{
+    margin-top: 50px;
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.txt__dispositivo{
+    display: none;
+}
+.esports__grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr ;
+}
+.card__esports {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card__esports .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card__esports .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card__esports .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__esports .front h3 {
+    position: absolute;
+    font-weight: bolder;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.card__esports .back {
+    transform: perspective(600px) rotateY(180deg);
+    background:#fff;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card__esports .back .link {
+    font-weight: bold;
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card__esports .back .link a {
+    color:#000;
+    font-family: 'Oswald' , sans-serif;
+    text-decoration: none;
+}
+
+.card__esports .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card__esports .back p {
+    letter-spacing: 1px;
+} 
+
+.card__esports:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card__esports:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* ? FIN CIERRE CARDS GRIDS*/
+
+.slider__titulo{
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+}
+.slider__titulo h2{
+    font-family: 'Oswald';
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.slider__titulo a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    border: 1px solid #0028be;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 5px;
+    align-self: center;
+    color:#0028be ;
+    transition: background 1s;
+}
+.slider__titulo a:hover{
+    background-color: #0028be;
+    color: #fff;
+}
+
+.slider__esports{
+    width: 70%;
+    height: 800px;
+    overflow: hidden;
+}
+.slider__esports ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider__esports li{
+    width: 100%;
+    list-style: none;
+}
+.slider__esports img{
+    width: 100%;
+    height: 800px;
+}
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left:-200% ;}
+    70%{margin-left:-200% ;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left:-300% ;}
+    
+}
+
+/* ?FIN MAIN ESPORTS*/
+
+/* ? INICIO MAIN GUIA */
+.guia__titulo{
+    border: 2px solid #0028be;
+    box-shadow: 0px 10px 30px #001478;
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    
+}
+.guia__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.4;
+    align-self: flex-start;
+    color: #0028be;
+}
+.guia__titulo p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+.guia__campeon{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+    margin: 15px;
+}
+.guia__campeon img {
+    width: 800px;
+    height: 400px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.guia__campeon h4{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#0028be;
+    display: flex;
+    align-self:center;
+    margin-left: -390px;
+}
+.guia__campeon p {
+    display: flex;
+    max-width: 800px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 40px;
+    align-self: center;
+}
+.guia__main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width:900px;
+    align-self: center;
+}
+.guia__txt__main{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#0028be;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 42px;
+}
+.guia__runas{
+  margin: 10px;
+  display: flex; 
+  align-self: center;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  gap: 50px;
+}
+.guia__runas__txt{
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    margin-left: 70px;
+    margin-right: 40px;
+    letter-spacing: 1.2px;
+}
+.guia__habilidades{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    align-self: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+}
+.guia__txt{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#0028be;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: -22px;
+}
+.guia__habilidades__contenido{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.guia__habilidades__contenido p{
+    display: flex;
+    align-self: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.guia__build{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    align-self: center;
+    gap:20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.guia__build .guia__txt{ /* tuve que copiarlo de nuevo xq no me toma la fuente cuando lo pongo desde la clase */
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#0028be;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: -22px;
+}
+.guia__build__items{
+    display: flex;
+    justify-content: space-around;
+}
+.guia__build__items img{
+    width: 46px;
+    height: 46px;
+}
+.guia__build p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+/*!INICIO FOOTER*/
+.footer{
+    display: flex;
+    gap: 50px;
+}
+.paralelograma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0028be;
+    width: 50vw;
+    transform: skew(-20deg) translateX(-50px);
+}
+.paralelograma h4{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    padding: 20px;
+}
+.paralelograma a {
+    text-decoration: none;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    padding: 20px;
+}
+.contacto__info{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.contacto .contacto__info a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #0028be;
+    font-family:'Oswald',sans-serif;
+    font-weight: bold;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 40px;  
+}
+.contacto .redes a img {
+    width: 40px;
+    height: 40px;
+}
+
+/*!MOBILE 480 , TABLET 768*/
+@media screen and (max-width:768px) {
+    /*!HEADER GENERAL*/
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    header ul li a {
+        margin: 8px;
+    }
+    main{
+        margin: 50px 0px;
+    }
+    /* ! FIN HEADER GENERAL*/
+    
+
+    /*!INICIO HEADER DEL INDEX*/
+    .header__index{
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        background: #0028be;
+        width: 100%;
+        
+    }
+    .nav__index{
+        justify-content: flex-end;
+    }
+    .logo__index{
+        color: #fff;
+    }
+    .header__index ul li a {
+        display: flex;
+        margin: 0px;
+        color: #fff;
+        margin: 8px;
+    }
+    /* ! FIN HEADER INDEX
+    
+
+    ? INICIO MAIN INDEX */
+    .index__main{
+        margin: 120 5 10px;
+    }
+    .index__titulo, .index__subtitulo{
+        left: 3%;
+        top:40%;
+    }
+    .index__titulo{
+        font-size: 1rem;
+    }
+    .index__subtitulo{
+        top: 45%;
+        font-size: .8rem;
+    }
+    /* ?FIN MAIN INDEX 
+    
+
+    ? INICIO SLIDE  */
+    .slide__container{
+        border: none;
+        box-shadow: none;
+    }
+    .cards .card .content .slide__txt{
+        color: #000;
+        font-weight: 500;
+    }
+    .cards .card .content .date{
+        color: #0028be;
+    }
+    .slide__container a{
+        font-weight: bolder;
+        display: flex;
+        align-self: center;
+        margin-left: -20px;
+    }
+    /* ? FIN SLIDE
+    
+
+    ? INICIO MULTIMEDIA*/
+    .multimedia{
+        width: 100%;
+        margin: 10px 0px 50px 0px;
+        border: none;
+        box-shadow: none;
+        flex-direction: column;
+    }
+    .multimedia__frame{
+        display: flex;
+        align-self: center;
+    }
+    /*? FIN MULTIMEDIA*/
+    
+    
+    /*?INICIO SECION NOTICIAS */
+    .noticia__dest{
+        display: flex;
+        border: none;
+        box-shadow: none;
+        align-self: center;
+        
+    }
+    .noticia__title{
+        display: flex;
+        align-self: center;
+        padding:0px;
+    }
+    .noticia__contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .noticia__contenido img{
+        margin-top: 30px;
+        height: 400px;
+        width: 768px;
+    }
+    .noticia__card{
+        display: flex;
+        width: 768px;
+    }
+    .noticia__card__title, .noticia__card__subtitle, span p {
+        display: flex;
+        align-self: center;
+    }
+    .noticia__card__parrafo {
+        text-align: center;
+    }
+    .noticia__card__boton{
+        width: auto;
+    }
+    .noticia__card__boton:hover{
+        background-color: #fff;
+        color:#0028be;
+    }
+    .hide{
+        display: none;
+    }
+    
+    /*? FIN NOTICIAS  */
+
+
+    /*?INICIO MULTIMEDIA */
+    .container{
+        width: 100%;
+        max-width:768px;
+        display: flex;
+    }
+    .container__card{
+        width: 320px;
+        margin: 5px;
+    }
+    .container__card:hover{
+        display: none;
+    }
+    .container__card img{
+        width: 100%;
+        height: 200px;
+    }
+    .container__card .container__info span,
+    .container__card .container__info p {
+        font-weight: 600;
+    }
+    .container__card .container__info h4{
+        font-weight: bolder;
+        font-size: 1.09rem;
+    }
+    /* ?FIN CONTAINER INDEX
+    
+
+    ?INICIO SECCION GUIA */
+    .main__guia {
+        margin: 0px;
+    }
+    .main__guias{
+        box-shadow: none;
+        border: none;
+        margin-top: 80px;
+        height: 300px;
+        width: 700px;
+        align-self: flex-start;
+    }
+    .main__guias h2{
+        font-size: 3rem;
+    }
+    .main__guias p {
+        font-size: 1rem;
+        width: 600px;
+    }
+    .main__tabla__campeones{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(15, auto);
+        padding: 20px;
+        grid-template-areas: 
+        "topl topl"
+        "fiora  darius"
+        "renekton  riven"
+        "jungle jungle"
+        "wukong xinzhao"
+        "khazix  leesin"
+        "mid mid"
+        "zed ahri"
+        "diana ziggs"
+        "adc adc"
+        "corki ezreal"
+        "cait lucian"
+        "support support"
+        "yummi thresh"
+        "rakan nautilus"
+        ;
+    }
+    /*?FIN SECCION GUIA*/
+    
+
+    /* ?INICIO SECCION PARCHE*/
+    .parche__portada{
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .parche__encabezado img {
+        width: 800px;
+        top: 0%;
+    }
+    .parche__titulo{
+        border: none;
+        box-shadow: none;
+        margin:40px 0px 0px 0px ;
+    }
+    .parche__contenido{
+        border: none;
+        width: 700px;
+        padding-top: 0px;
+    }
+    .parche__campeones{
+        border: none;
+        width: 700px;
+    }
+    /*
+    ?FIN SECCION PARCHE
+    
+    ?INICIO SECCION GUIA
+    */
+    .guia__titulo{
+        border: none;
+        box-shadow: none;
+        margin-top: 100px;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
+    .guia__titulo h1{
+        font-size: 2.3rem;
+    }
+    .guia__titulo p{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .guia__campeon,
+    .guia__campeon img {
+        width: 728px;
+    }
+    .guia__campeon h4{
+        margin-left: 0px;
+        align-self: flex-start;
+    }
+    .guia__main{
+        width: 728px;
+    }
+    .guia__txt__main{
+        margin-top: 0px;
+        margin-left: 0px;
+        align-self: flex-start;
+    }
+    .guia__habilidades{
+        width: 728px;
+    }
+    .guia__habilidades__contenido p{
+        letter-spacing: 1.2px;
+    }
+    .guia__txt{
+        margin-left: 0px;
+    }
+    .guia__build{
+        width: 728px;
+        font-weight: 600px;
+    }
+    /*? FIN SECCION GUIA*/
+
+    /*? INICIO SECCION ESPORTS*/
+    .esports__titulo{
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .esports__parrafo{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .esports__titulo h1{
+        font-size: 4rem;
+        margin-left: 20px;
+    }
+    .esports__grids{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: repeat(5 , 1fr) ;
+        grid-template-areas: 
+        "txt txt"
+        "card card"
+        "card card"
+        "card card"
+        "card card"
+       ;
+    }  
+    .txt__dispositivo{
+        display: grid;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+        margin: 0px auto;
+        grid-area: txt;;
+    }
+    .slider__titulo{
+        width: 728px;
+        gap:0px
+    }
+    .slider__titulo a{
+        align-self: start;
+        margin-top: 10px;
+    }
+    .slider__titulo a:hover{
+        background-color: #fff;
+        color:#0028be;
+    }   
+    .slider__esports{
+        width: 100%;
+    }
+    /* ? FIN SECCION SLIDE*/
+
+    /* !INICIO FOOTER GENERAL*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .paralelograma{
+        width: 100%;
+        max-width: 768px;
+        display: flex;
+        transform: none;
+    }
+    .paralelograma h4{
+        padding: 0px;
+        display: flex;
+        align-self: center;
+        margin-left: 25px;
+    }
+    .contacto{
+        width: 100%;
+        max-width: 768px;
+        padding: 0px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: left;
+        justify-content: left;
+    }
+    .contacto__info{
+        display: flex;
+        align-self: center;
+    }
+    .contacto .contacto__info a{
+        display: flex;
+        align-self: left;
+        font-size: .9rem;
+    }
+    .contacto .redes{
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width:480px) {
+    /*!HEADER GENERAL*/
+
+    header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+    }
+    .nav__hamburguer{ /*FALTA CENTRAR*/
+        display: flex;
+        align-self:center;
+        justify-content: right;
+        margin: 0px;
+    } 
+    .nav__hamburguer img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .nav__links{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        align-self: flex-start;
+        padding: 0%;
+    }
+    /*!FIN HEADER GENERAL*/
+       
+
+    /* !INICIO HEADER INDEX*/
+    .nav__index .nav__hamburguer{
+        display: flex;
+        margin-right: 28px;
+    }
+    .header__index ul li a{
+        display: none;
+        justify-content: space-between;
+    }
+    /*!FIN HEADER INDEX*/
+    
+
+    /*?iNICIO MAIN INDEX*/
+    .index__main img{
+        top: -17%;
+    }
+    .index__subtitulo{
+        top: 50%;
+    }
+    /*? FIN MAIN INDEX*/
+    
+
+    /*?INICIO SLIDE MAIN*/
+    .content{
+        padding: 5px;
+
+    }
+    .main-card .cards .card{
+        width: calc(100% / 1 - 10px);
+    }
+    
+    /*?FIN SLIDE */
+    
+
+    /*?INICIO MULTIMEDIA*/
+    .multimedia{
+        margin: 10px;
+        width: 100%;
+        padding: 5px;
+    }
+    .multimedia__frame{
+        width: 470px;
+        padding: 5px;
+    }
+    /*? FIN MULTIMEDIA Y SECCION INDEX*/
+
+
+    /*?INICIO SECCION NOTICIAS*/
+    .noticia__dest{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 480px;
+        box-shadow: none;
+        border: none;
+    }
+    .noticia__title{
+        display: flex;
+        margin: 0px;
+        margin-bottom: 25px;
+        justify-content: left;
+        padding: 4px;
+    }
+    .noticia__contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .noticia__contenido img{
+        width: 480px;
+        height:300px;
+        display: flex;
+        align-self: center;
+    }
+    .noticia__card{
+        width:100%;
+        max-width: 480px;
+        padding: 5px;
+    }
+    .noticia__card__title, .noticia__card__subtitle{
+        padding: 0px;
+        display: flex;
+        align-self: center;
+    }
+    .noticia__card__parrafo{
+        width: 100%;
+        max-width: 480px;
+        padding: 20px 0px 20px 5px;
+        text-align: center;
+    }
+    .noticia__card__parrafo span{
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .noticia__card__parrafo p{
+        font-weight: 600;
+    }
+    .noticia__card__boton{
+        background-color: #fff;
+        color: #0028be;
+    }
+    .noticia__card__boton:hover{
+        background-color: #fff;
+        color: #0028be;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        max-width: 480px;
+        align-self: center;
+        gap: 5px;
+        justify-content: center;
+        margin: 0%;
+    }
+    .container__card{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 5px;
+    }
+    /*?FIN SECCION NOTICIAS*/
+
+
+    /*?INICIO SECCION GUIAS*/
+
+    .main__guias{
+        margin-top: 120px;
+        width: 450px;
+        height: 300px;
+    }
+    .main__guias h2{
+        font-size: 2.3rem;
+    }
+    .main__guias p {
+        width: 450px;
+    }
+    .main__tabla__campeones{
+        display: grid;
+        gap: 5px;
+        padding-top: 0px;
+        grid-template-columns: repeat(1 , auto);
+        grid-template-rows: repeat(25, auto);
+        grid-template-areas: 
+        "topl"
+        "fiora"
+        "darius"
+        "renekton"
+        "riven"
+        "jungle"
+        "wukong"
+        "xinzhao"
+        "khazix"
+        "leesin"
+        "mid"
+        "zed"
+        "ahri"
+        "diana"
+        "ziggs"
+        "adc"
+        "corki"
+        "ezreal"
+        "cait"
+        "lucian"
+        "support"
+        "yummi"
+        "thresh"
+        "rakan"
+        "nautilus";
+        justify-content: flex-start;
+    }
+    /*?FIN SECCION GUIAS*/
+    
+
+    /*?INICIO SECCION PARCHE*/
+    .parche__contenido{
+        width: 450px;
+    }
+    .parche__contenido img {
+        width: 450px
+    }
+    .parche__campeones{
+        width: 450px;
+    }
+    .parche__campeones .img--size{
+        width: 450px;
+        align-self: center
+    }
+    .parche__card{
+        width:430px ;
+    }
+    .parche__card__habilidades{
+        align-self: center ;
+        margin: 20px 0px;
+    }
+    /*?FIN SECCION PARCHE*/
+    
+
+    /*?INICIO SECCION GUIA*/
+    
+    .guia__campeon img{
+        width: 440px;
+        height: 320px;
+    }
+    .guia__titulo p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .guia__main{
+        width: 440px;
+    }
+    .guia__campeon{
+        width: 440px;
+    }
+    .guia__habilidades{
+        width: 440px;
+    }
+    .guia__habilidades img{
+        width: 64px;
+        height: 64px;
+    }
+    .guia__build{
+        width: 440px;
+        font-weight: 600px;
+    }
+    /*?FIN SECCION GUIA*/
+
+    /*? INICIO SECCION ESPORTS*/
+    .esports__titulo h1 {
+        font-size: 3rem;
+    }
+    .esports__titulo p {
+        font-size: 1.5rem;
+    }
+    .esports__parrafo{
+        font-size: .9rem;
+        margin-top: 30px;
+    }
+    .esports__grids{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: repeat(9 , 1fr) ;
+        row-gap: 20px;
+        grid-template-areas: 
+        "txt"
+        "card" 
+        "card" 
+        "card" 
+        "card"
+        "card"
+        "card"
+        "card"
+        "card" 
+       ;
+    }
+    .card__esports{
+        margin: 0px auto;
+    }
+    .slider__titulo{
+        width: 460px;
+    }
+    .slider__titulo h2{
+        width: 450px;
+    }
+    .slider__titulo a{
+        align-self: center;
+    }
+    .slider__titulo a:hover{
+        background-color: #fff;
+        color:#0028be;
+    }
+    .slider__esports{
+        display: none;
+    }
+    /*?FIN SECCION ESPORTS*/
+
+    
+    /*!INICIO FOOTER*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .paralelograma{
+        width: 100%;
+        max-width: 480;
+        display: flex;
+        width: 100vh;
+        transform: none;
+    }
+    .paralelograma h4{
+        padding: 0px;
+        display: flex;
+        align-self: center;
+        margin-left: 25px;
+    }
+    .contacto{
+        width: 100%;
+        max-width: 480px;
+        padding: 0px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: left;
+        justify-content: left;
+    }
+    .contacto__info{
+        display: flex;
+        align-self: center;
+    }
+    .contacto .contacto__info a{
+        display: flex;
+        align-self: left;
+        font-size: .9rem;
+    }
+    .contacto .redes{
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+}
+    
