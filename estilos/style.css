@@ -1031,6 +1031,10 @@ INICIO MAIN ESPORTS
     100%{margin-left:-300% ;}
     
 }
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
 
 
 
