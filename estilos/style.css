@@ -999,7 +999,6 @@ INICIO MAIN ESPORTS
     background-color: #0028be;
     color: #fff;
 }
-
 .slider__esports{
     width: 70%;
     height: 800px;
@@ -1032,6 +1031,12 @@ INICIO MAIN ESPORTS
     100%{margin-left:-300% ;}
     
 }
+.carousel-item img{
+    height: 800px;
+    object-fit: cover;
+}
+
+
 
 /* ?FIN MAIN ESPORTS*/
 
