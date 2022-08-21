@@ -1032,10 +1032,27 @@ INICIO MAIN ESPORTS
     
 }
 .carousel-item img{
-    height: 800px;
+    height: 700px;
     object-fit: cover;
 }
-
+.carousel-item h5{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.carousel-item a{
+    font-size: 1.2rem;  
+}
+.carousel-item .h5--color {
+    color: #000;
+    font-weight: bold;
+}
+.carousel-item .a--color{
+    color:#000;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
 
 /* ?FIN MAIN ESPORTS*/
