@@ -12,6 +12,7 @@
     <title>MbGaming/</title>
   </head>
 <body>
+  </div>
     <header class="header__index">
         <a href="./index.html" class="logo__index">MbGaming/</a>
         <nav class="nav__index">
@@ -154,6 +155,33 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/wkihKQ7Exvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe> 
         </div> 
     </div>
+    <div class="toast-container position-fixed top-0 bottom-0 end-0">
+      <div class="toast" data-bs-autohide="true">
+        <div class="toast-header">
+          <img src="./imagenes/Snapdragon_allmode.png" alt="icono">
+          <b class="ms-2">ESL Tournament en vivo</b>
+          <small class="ms-auto">Hace 2 minutos</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body d-flex flex-md-column">
+           <p> Ve la transmisión del partido
+            Leviatan vs Ebro Gaming</p>
+            <a href="#">Twitch</a>
+        </div>
+      </div>
+      <div class="toast show">
+        <div class="toast-header">
+          <img src="./imagenes/Wild_Circuit_2022_lightmode.png" alt="icono">
+          <b class="ms-2">ESL Tournament en vivo</b>
+          <small class="ms-auto">Hace 6 minutos</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body d-flex flex-md-column">
+            <p>Conoce los enfrentamietos de Wild Circuit Series Brazil </p>
+            <a href="#">Aqui</a>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
         <div class="paralelograma">
          <a href="./index.html"><h4>MbGaming/</h4></a>
@@ -173,5 +201,12 @@
     </footer>
     <script src="./jsscroll/scroll2.js"></script>
     <script src="./jsscroll/bootstrap.bundle.min.js"></script>
+    <script>
+      window.onload = (event) =>{
+        let myAlert = document.querySelector('.toast');
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+      }
+    </script>
   </body>
 </html>

@@ -522,7 +522,6 @@ inicio multimedia index*/
     display: flex;
     gap:30px;  
     border-top:2px solid #000;
-
     align-self: center;
 }
 
@@ -533,13 +532,11 @@ inicio multimedia index*/
     align-items: center;
     justify-content: center;
     align-self:center;
-    
 }
 .multimedia__contenido img{
     width: 200px;
     height: 100px; 
     display: flex;
-    
 }
 .multimedia__contenido p {
     font-family: 'Nunito', sans-serif;
@@ -569,9 +566,25 @@ inicio multimedia index*/
     transition: all 0.4s ease;
 }
 
+/*! TOAST BOOTSTRAP*/
+.toast-header img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.toast-body p{
+    margin-bottom: 5px;
+}
+.toast-body a {
+    color: #133dd8;
+}
+
+
 /* fin multimedia index 
 
+
 inicio main  seccion GUIAS*/
+
 
 .main__guias{
     border: 1px solid #001478;
@@ -1135,7 +1148,6 @@ INICIO MAIN ESPORTS
 }
 .row{
     width: 1000px;
-    border: 2px solid salmon;
     margin: 0 auto;
 }
 .guia__campeon{
