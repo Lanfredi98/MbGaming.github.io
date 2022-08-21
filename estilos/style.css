@@ -270,6 +270,10 @@ start CONTAINER*/
     padding: 15px;
     text-align: center;
 }
+.container__card .card-body{
+    padding: 15px;
+    text-align: center;
+}
 .container__card .container__info span{
     font-weight: 500;
     font-family: 'Nunito',sans-serif;
@@ -304,7 +308,41 @@ start CONTAINER*/
     color:#fff;
     transition: all 800ms ease;
 }
+.card-body span{
+    font-weight: 500;
+    font-family: 'Nunito',sans-serif;
+    display: flex;
+} 
+.card-body .card-title{
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+}
+.card-body .card-text{
+    font-family:'Nunito',sans-serif;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.card-body a{
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Oswald',sans-serif;
+    border: 1px solid #0028be;
+    color:#0028be;
+    border-radius:4px;
+    transition: all 400ms ease;
+}
+.card-body a:hover{
+    background-color:#001478;
+    color:#fff;
+    transition: all 800ms ease;
 
+}
 /*FIN MAIN NOTICIAS
 
 INICIO MAIN INDEX
@@ -484,7 +522,6 @@ inicio multimedia index*/
     display: flex;
     gap:30px;  
     border-top:2px solid #000;
-
     align-self: center;
 }
 
@@ -495,13 +532,11 @@ inicio multimedia index*/
     align-items: center;
     justify-content: center;
     align-self:center;
-    
 }
 .multimedia__contenido img{
     width: 200px;
     height: 100px; 
     display: flex;
-    
 }
 .multimedia__contenido p {
     font-family: 'Nunito', sans-serif;
@@ -531,9 +566,25 @@ inicio multimedia index*/
     transition: all 0.4s ease;
 }
 
+/*! TOAST BOOTSTRAP*/
+.toast-header img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.toast-body p{
+    margin-bottom: 5px;
+}
+.toast-body a {
+    color: #133dd8;
+}
+
+
 /* fin multimedia index 
 
+
 inicio main  seccion GUIAS*/
+
 
 .main__guias{
     border: 1px solid #001478;
@@ -733,6 +784,18 @@ INICIO MAIN PARCHE
     width: 100vw;
     top: -26%; /* consultar como hacerlo con otra medida*/
     margin-bottom: -7%;
+}
+.dropdown{
+    width: 800px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+}
+.dropdown .btn{
+   background-color: #133dd8;
+   align-self: flex-start;
+   letter-spacing: 1px;
 }
 .parche__titulo{
     max-width: 800px;
@@ -1032,10 +1095,27 @@ INICIO MAIN ESPORTS
     
 }
 .carousel-item img{
-    height: 800px;
+    height: 700px;
     object-fit: cover;
 }
-
+.carousel-item h5{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.carousel-item a{
+    font-size: 1.2rem;  
+}
+.carousel-item .h5--color {
+    color: #000;
+    font-weight: bold;
+}
+.carousel-item .a--color{
+    color:#000;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
 
 /* ?FIN MAIN ESPORTS*/
@@ -1066,6 +1146,10 @@ INICIO MAIN ESPORTS
     font-weight: bold;
     letter-spacing: 1.1px;
 }
+.row{
+    width: 1000px;
+    margin: 0 auto;
+}
 .guia__campeon{
     width: 100%;
     max-width: 1250px;
@@ -1090,25 +1174,15 @@ INICIO MAIN ESPORTS
     letter-spacing: 1.2px;
     color:#0028be;
     display: flex;
-    align-self:center;
-    margin-left: -390px;
+    align-self:flex-start;
+    margin-top: 20px;
 }
 .guia__campeon p {
     display: flex;
     max-width: 800px;
     font-family: 'Oswald',sans-serif;
     font-size: 1.3rem;
-    font-weight: 500;
-    margin-left: 40px;
-    align-self: center;
-}
-.guia__main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width:900px;
+    font-weight: 300;
     align-self: center;
 }
 .guia__txt__main{
@@ -1119,9 +1193,18 @@ INICIO MAIN ESPORTS
     letter-spacing: 1.2px;
     color:#0028be;
     display: flex;
-    align-self: flex-start;
+    align-self:flex-start;
     margin-top: 20px;
-    margin-left: 42px;
+    margin-left: 15px;
+}
+.guia__main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width:1000px;
+    align-self: center;
 }
 .guia__runas{
   margin: 10px;
@@ -1133,16 +1216,17 @@ INICIO MAIN ESPORTS
   gap: 50px;
 }
 .guia__runas__txt{
+    display: flex;
+    width: 800px;
     font-family: 'Nunito', sans-serif;
     font-weight:600;
-    margin-left: 70px;
-    margin-right: 40px;
+    align-self: center;
     letter-spacing: 1.2px;
+    margin-left: 15px;
 }
 .guia__habilidades{
     display: flex;
     width: 100%;
-    max-width: 800px;
     align-self: center;
     flex-direction: column;
     gap: 25px;
@@ -1158,7 +1242,6 @@ INICIO MAIN ESPORTS
     display: flex;
     align-self: flex-start;
     margin-top: 20px;
-    margin-left: -22px;
 }
 .guia__habilidades__contenido{
     display: flex;
@@ -1192,7 +1275,6 @@ INICIO MAIN ESPORTS
     display: flex;
     align-self: flex-start;
     margin-top: 20px;
-    margin-left: -22px;
 }
 .guia__build__items{
     display: flex;
@@ -1203,9 +1285,12 @@ INICIO MAIN ESPORTS
     height: 46px;
 }
 .guia__build p{
+    display: flex;
+    max-width: 1000px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     letter-spacing: 1.2px;
+    align-self: center;
 }
 /*!INICIO FOOTER*/
 .footer{
