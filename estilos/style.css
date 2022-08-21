@@ -1133,6 +1133,11 @@ INICIO MAIN ESPORTS
     font-weight: bold;
     letter-spacing: 1.1px;
 }
+.row{
+    width: 1000px;
+    border: 2px solid salmon;
+    margin: 0 auto;
+}
 .guia__campeon{
     width: 100%;
     max-width: 1250px;
@@ -1157,25 +1162,15 @@ INICIO MAIN ESPORTS
     letter-spacing: 1.2px;
     color:#0028be;
     display: flex;
-    align-self:center;
-    margin-left: -390px;
+    align-self:flex-start;
+    margin-top: 20px;
 }
 .guia__campeon p {
     display: flex;
     max-width: 800px;
     font-family: 'Oswald',sans-serif;
     font-size: 1.3rem;
-    font-weight: 500;
-    margin-left: 40px;
-    align-self: center;
-}
-.guia__main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width:900px;
+    font-weight: 300;
     align-self: center;
 }
 .guia__txt__main{
@@ -1186,9 +1181,18 @@ INICIO MAIN ESPORTS
     letter-spacing: 1.2px;
     color:#0028be;
     display: flex;
-    align-self: flex-start;
+    align-self:flex-start;
     margin-top: 20px;
-    margin-left: 42px;
+    margin-left: 15px;
+}
+.guia__main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width:1000px;
+    align-self: center;
 }
 .guia__runas{
   margin: 10px;
@@ -1200,16 +1204,17 @@ INICIO MAIN ESPORTS
   gap: 50px;
 }
 .guia__runas__txt{
+    display: flex;
+    width: 800px;
     font-family: 'Nunito', sans-serif;
     font-weight:600;
-    margin-left: 70px;
-    margin-right: 40px;
+    align-self: center;
     letter-spacing: 1.2px;
+    margin-left: 15px;
 }
 .guia__habilidades{
     display: flex;
     width: 100%;
-    max-width: 800px;
     align-self: center;
     flex-direction: column;
     gap: 25px;
@@ -1225,7 +1230,6 @@ INICIO MAIN ESPORTS
     display: flex;
     align-self: flex-start;
     margin-top: 20px;
-    margin-left: -22px;
 }
 .guia__habilidades__contenido{
     display: flex;
@@ -1259,7 +1263,6 @@ INICIO MAIN ESPORTS
     display: flex;
     align-self: flex-start;
     margin-top: 20px;
-    margin-left: -22px;
 }
 .guia__build__items{
     display: flex;
@@ -1270,9 +1273,12 @@ INICIO MAIN ESPORTS
     height: 46px;
 }
 .guia__build p{
+    display: flex;
+    max-width: 1000px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     letter-spacing: 1.2px;
+    align-self: center;
 }
 /*!INICIO FOOTER*/
 .footer{
