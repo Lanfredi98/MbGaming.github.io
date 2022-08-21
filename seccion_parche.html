@@ -3,16 +3,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--FUENTE NUNITO PARA EL TEXTO EN MINUSCULA-->
+        <link rel="stylesheet" href="./estilos/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <!--FUENTE OSWALD PARA LAS MAYUSCULAS-->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <!--LINKEAMOS EL ARCHIVOS CSS-->  
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./estilos/style.css">
-        <script src="./jsscroll/scroll2.js"></script>
-        <!-- Definicion de titulo de la pagina-->
         <title>MbGaming/</title>
     </head>
 <body>
@@ -44,6 +40,16 @@
     <main class="parche__portada">
         <div class="parche__encabezado">
             <img src="./imagenes/kassaheader.png" alt="">
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Parches
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Parche 3.2</a></li>
+              <li><a class="dropdown-item" href="#">Parche 3.1</a></li>
+              <li><a class="dropdown-item" href="#">Parche 3.0</a></li>
+            </ul>
         </div>
         <div class="parche__titulo">
             <p>19/07/2022</p>
@@ -134,5 +140,7 @@
         </div>
         
     </footer>
+    <script src="./jsscroll/scroll2.js"></script>
+    <script src="./jsscroll/bootstrap.bundle.min.js"></script>
 </body>
 </html>

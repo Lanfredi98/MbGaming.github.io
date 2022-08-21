@@ -270,6 +270,10 @@ start CONTAINER*/
     padding: 15px;
     text-align: center;
 }
+.container__card .card-body{
+    padding: 15px;
+    text-align: center;
+}
 .container__card .container__info span{
     font-weight: 500;
     font-family: 'Nunito',sans-serif;
@@ -304,7 +308,41 @@ start CONTAINER*/
     color:#fff;
     transition: all 800ms ease;
 }
+.card-body span{
+    font-weight: 500;
+    font-family: 'Nunito',sans-serif;
+    display: flex;
+} 
+.card-body .card-title{
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #0028be;
+}
+.card-body .card-text{
+    font-family:'Nunito',sans-serif;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.card-body a{
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Oswald',sans-serif;
+    border: 1px solid #0028be;
+    color:#0028be;
+    border-radius:4px;
+    transition: all 400ms ease;
+}
+.card-body a:hover{
+    background-color:#001478;
+    color:#fff;
+    transition: all 800ms ease;
 
+}
 /*FIN MAIN NOTICIAS
 
 INICIO MAIN INDEX
@@ -733,6 +771,18 @@ INICIO MAIN PARCHE
     width: 100vw;
     top: -26%; /* consultar como hacerlo con otra medida*/
     margin-bottom: -7%;
+}
+.dropdown{
+    width: 800px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+}
+.dropdown .btn{
+   background-color: #133dd8;
+   align-self: flex-start;
+   letter-spacing: 1px;
 }
 .parche__titulo{
     max-width: 800px;
