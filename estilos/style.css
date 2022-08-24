@@ -8,7 +8,6 @@ body{
     flex-direction: column;
 }
 /*! HEADER*/
-
 .navbar {
     background-color: #0028be !important ;
     justify-content: space-between;
@@ -19,6 +18,11 @@ body{
     font-size: 3rem !important ;
     font-family: 'Oswald', sans-serif;
     color: #fff;
+    transition: 1.2s;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+    color: #fff;
 }
 .nav-link{
     margin-left: 10px;
@@ -27,6 +31,11 @@ body{
     font-weight: 600;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
+    transition: 1s;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    color: #fff;
 }
 .nav-item--sesion{
     display: none;
@@ -44,12 +53,17 @@ body{
     font-size: 14px;
     align-self: center;
     font-family: 'Nunito', sans-serif;
+    cursor:default;
 }
 .login__img img {
     display: flex;
     width: 40px;
     height: 40px;
     align-self: center;
+    transition: 1s;
+}
+.login__img img:hover{
+    transform: scale(1.3);
 }
 /* header.abajo .logo,
 header.abajo ul li a{
@@ -93,7 +107,6 @@ main{
 .noticia__titletext--color{
     color: #001478
 }
-
 /*
 End noticia_title
 
@@ -143,7 +156,6 @@ start noticia_info
     display: flex;
     padding: 20px 20px 20px 40px;
 }
-
 .noticia__card__boton{
     width: 78%;
     text-decoration: none;
@@ -158,7 +170,6 @@ start noticia_info
     display: flex;
     justify-content: center;
     align-self: center;
-
 }
 .noticia__card__boton:hover{
     background-color:#001478;
@@ -272,7 +283,7 @@ start CONTAINER*/
     transition: all 800ms ease;
 
 }
-/*FIN MAIN NOTICIAS
+/*!FIN MAIN NOTICIAS
 
 INICIO MAIN INDEX
 */
@@ -312,6 +323,7 @@ INICIO MAIN INDEX
     letter-spacing: 1.2px;
     color: #0028be;
     border-top: 2px solid #000;
+    margin-top: -70px;
 }
 .slide__noticias{
     display: flex;
@@ -445,10 +457,9 @@ INICIO MAIN INDEX
   input[type="radio"]{/*se ocultalos controles del input*/
     display:none;
   }
-/* fin slide  index
+/*! FIN SLIDE INDEX
 
-inicio multimedia index*/
-
+INICIO MULTIMEDIA INDEX*/
 .multimedia{
     width: 1000px;
     min-height: 20vh;
@@ -512,10 +523,9 @@ inicio multimedia index*/
 .toast-body a {
     color: #133dd8;
 }
-/* fin multimedia index
+/* !FIN MULTIMEDIA INDEX
 
-
-inicio main  seccion GUIAS*/
+INICIO MAIN SECCION "GUIAS"*/
 .main__row{
     transition: transform 1.2s;
 }
@@ -701,7 +711,7 @@ inicio main  seccion GUIAS*/
 }
 /*
 
-FIN MAIN GUIAS
+!FIN MAIN GUIAS
 
 
 INICIO MAIN PARCHE
@@ -836,9 +846,8 @@ INICIO MAIN PARCHE
     font-family: 'Nunito',sans-serif;
     font-weight: bold;
 }
-
 /*
-FIN MAIN PARCHE
+!FIN MAIN PARCHE
 
 INICIO MAIN ESPORTS
 
@@ -851,7 +860,7 @@ INICIO MAIN ESPORTS
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: -80px;
 }
 .esports__titulo p{
     font-size: 2rem;
@@ -896,14 +905,12 @@ INICIO MAIN ESPORTS
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
-
 .card__esports .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .card__esports .front h3 {
     position: absolute;
     font-weight: bolder;
@@ -915,7 +922,6 @@ INICIO MAIN ESPORTS
     background: rgba(255, 255, 255, 0.4);
     text-align: center;
 }
-
 .card__esports .back {
     transform: perspective(600px) rotateY(180deg);
     background:#fff;
@@ -927,38 +933,31 @@ INICIO MAIN ESPORTS
     text-align: center;
     box-shadow: 0 5px 10px #000;
 }
-
 .card__esports .back .link {
     font-weight: bold;
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
 }
-
 .card__esports .back .link a {
     color:#000;
     font-family: 'Oswald' , sans-serif;
     text-decoration: none;
 }
-
 .card__esports .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
-
 .card__esports .back p {
     letter-spacing: 1px;
 }
-
 .card__esports:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
-
 .card__esports:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
-
 /* ? FIN CIERRE CARDS GRIDS*/
 
 .slider__titulo{
@@ -985,38 +984,6 @@ INICIO MAIN ESPORTS
 .slider__titulo a:hover{
     background-color: #0028be;
     color: #fff;
-}
-.slider__esports{
-    width: 70%;
-    height: 800px;
-    overflow: hidden;
-}
-.slider__esports ul {
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 400%;
-}
-.slider__esports li{
-    width: 100%;
-    list-style: none;
-}
-.slider__esports img{
-    width: 100%;
-    height: 800px;
-}
-@keyframes cambio {
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left:-200% ;}
-    70%{margin-left:-200% ;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left:-300% ;}
-
 }
 .carousel-item img{
     height: 700px;
@@ -1267,12 +1234,10 @@ INICIO MAIN ESPORTS
     width: 40px;
     height: 40px;
 }
-
 /*!MOBILE 480 , TABLET 768*/
 @media screen and (max-width:768px) {
     /*!HEADER GENERAL*/
    
-    /* ! FIN HEADER GENERAL*/
     .hide{
         display: none;
     }
@@ -1286,12 +1251,8 @@ INICIO MAIN ESPORTS
     .nav-item--sesion{
         display: block;
     }
-    /* INICIO MAIN INDEX */
-    
-    /* ?FIN MAIN INDEX
 
-
-    ? INICIO SLIDE  */
+    /*!INICIO SLIDE  */
     .slide__text{
         margin-top: -100px;
     }
@@ -1344,7 +1305,6 @@ INICIO MAIN ESPORTS
         align-self: center;
         margin-top: 26px;
         margin-top: -120px;
-
     }
     .noticia__title{
         display: flex;
@@ -1766,7 +1726,6 @@ INICIO MAIN ESPORTS
     }
     /*?FIN SECCION NOTICIAS*/
 
-
     /*?INICIO SECCION GUIAS*/
     .main__guias{
         width: 450px;
@@ -1855,7 +1814,6 @@ INICIO MAIN ESPORTS
 
 
     /*?INICIO SECCION GUIA*/
-
     .row,
     .guia__campeon,
     .guia__campeon img,
