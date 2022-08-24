@@ -1418,13 +1418,14 @@ INICIO MAIN ESPORTS
     ?INICIO SECCION GUIA */
     .main__guia {
         margin: 0px;
+        gap: 10px;
     }
     .main__guias{
         box-shadow: none;
         border: none;
-        margin-top: 80px;
         height: 300px;
         width: 700px;
+        margin-top: 20px;
         align-self: center;
         margin-left: 40px;
     }
@@ -1444,7 +1445,7 @@ INICIO MAIN ESPORTS
         grid-template-columns: repeat(2 , 1fr);
         grid-template-rows: repeat(15, auto);
         padding: 20px;
-        row-gap: 30px;
+        gap: 30px;
         grid-template-areas:
         "topl topl"
         "fiora  darius"
@@ -1772,7 +1773,8 @@ INICIO MAIN ESPORTS
         height: 300px;
         display: flex;
         align-self: center;
-        margin: 120px 0px 30px 0px
+        margin-left: 0%;
+        margin-top:40px;
     }
     .main__guias h2{
         font-size: 2.3rem;
@@ -1785,37 +1787,29 @@ INICIO MAIN ESPORTS
         width: 100px;
     }
     .main__tabla__campeones{
+        margin-top: 50px;
         display: grid;
         row-gap: 20px;
         padding-top: 0px;
-        grid-template-columns: repeat(1 , auto);
-        grid-template-rows: repeat(25, auto);
+        grid-template-columns: repeat(2 , auto);
+        grid-template-rows: repeat(15, auto);
         grid-template-areas:
-        "topl"
-        "fiora"
-        "darius"
-        "renekton"
-        "riven"
-        "jungle"
-        "wukong"
-        "xinzhao"
-        "khazix"
-        "leesin"
-        "mid"
-        "zed"
-        "ahri"
-        "diana"
-        "ziggs"
-        "adc"
-        "corki"
-        "ezreal"
-        "cait"
-        "lucian"
-        "support"
-        "yummi"
-        "thresh"
-        "rakan"
-        "nautilus";
+        "topl   topl"
+        "fiora  darius"
+        "renekton riven"
+        "jungle jungle"
+        "wukong xinzhao""
+        "khazix leesin"
+        "mid mid"
+        "zed ahri"
+        "diana ziggs"
+        "adc adc "
+        "corki ezreal"
+        "cait lucian"
+        "support support"
+        "yummi thresh"
+        "rakan  nautilus"
+        ;
         justify-content: flex-start;
     }
     /*?FIN SECCION GUIAS*/
