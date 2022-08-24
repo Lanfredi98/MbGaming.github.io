@@ -3,40 +3,59 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./estilos/style.css">
-        <script src="./jsscroll/scroll.js"></script>
+        
         <title>MbGaming/</title>
     </head>
 <body>
     <header>
-        <a href="./index.html" class="logo">MbGaming/</a>
-        <nav>
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Inicio</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid gap-5">
+              <a class="navbar-brand" href="#">MbGaming/</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
-                <li class="nav__item">
-                    <a href="./seccion_noticias.html" class="nav__link">Noticias</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./seccion_guias.html" class="nav__link">Guias</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./seccion_parche.html" class="nav__link">Parches</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./seccion_esports.html" class="nav__link">Esports</a>
-                </li>
-            </ul>
-            <a href="#nav" class="nav__hamburguer">
-                <img src="./imagenes/menu.svg" class="nav__icon">
-            </a>
+                  <li class="nav-item--sesion">
+                    <a class="nav-link active" href="#">Iniciar Sesión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_guia.html">Guias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./seccion_parche.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Parches
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./seccion_parche.html">Parche Actual</a></li>
+                      <li><a class="dropdown-item" href="./seccion_parche.html">Parche 3.2</a></li>
+                      <li><a class="dropdown-item" href="./seccion_parche.html">Parche 3.1</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_esports.html">Esports</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="login hide">
+                <p>Iniciar Sesión </p> 
+               <a class="login__img" href="#"> <img src="./imagenes/icons8-login-64.png" alt=""></a>
+               </div>
+            </div>
         </nav>
-    </header>
+      </header>
     <main class="guia__titulo">
         <h1>WILD RIFT: GUIA CAMILLE</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipis Odio amet aliquam assumenda nemo itaque molestias, voluptas maxime provident ullam. Voluptatibus nihil excepturi tempora. Error sequi eveniet ipsum praesentium? Omnis, cum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus saepe soluta laborum. Tempora odit exercitationem repellat illo culpa! Molestias modi blanditiis quae repellat vitae laborum eos sequi non a aperiam.</p>
@@ -100,62 +119,7 @@
                 </div>
             </div>
         </div>
-      </div>
-
-        <!-- <div class="guia__campeon">
-            <img src="./imagenes/camileguia.webp" alt="">
-            <h4>Acerca del campeón:</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum iusto possimus quo, sed debitis ex iste nihil error labore a ipsam quasi nisi cumque facilis velit dolorem ut vel.</p>
-        </div>
-        <div class="guia__main">
-            <p class="guia__txt__main">Runas:</p>
-            <div class="guia__runas">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/conqueror.jpg" alt="">
-                <img class="brutal" src="./imagenes/imagenes_proyecto/iconos/Campeones/268542-tormenta-wild-rift-64x64-2.jpg" alt="">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/titan.jpg" alt="">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/cazador.jpg" alt="">
-                </div>
-            <p class="guia__runas__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, debitis nobis ratione cum natus sunt porro enim ipsa minima labore molestiae perferendis necessitatibus voluptatibus vitae aliquam. Sint facere natus doloribus.</p>
-        </div>
-        <div class="guia__habilidades">
-            <p class="guia__txt">HABILIDADES:</p>
-            <div class="guia__habilidades__contenido">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/camille-adaptive-defenses.png" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ipsum culpa quasi laborum officia sed doloremque, at, voluptates nesciunt nam repellat eveniet modi tempora cum ven</p>
-            </div>
-            <div class="guia__habilidades__contenido">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/camille-precision-protocol.webp" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ipsum culpa quasi laborum officia sed doloremque, at, voluptates nesciunt nam repellat eveniet modi tempora cum ven</p>
-            </div>
-            <div class="guia__habilidades__contenido">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/camille-tactical-sweep.webp" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ipsum culpa quasi laborum officia sed doloremque, at, voluptates nesciunt nam repellat eveniet modi tempora cum ven</p>
-            </div>
-            <div class="guia__habilidades__contenido">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/camille-hookshot-wall-dive.webp" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ipsum culpa quasi laborum officia sed doloremque, at, voluptates nesciunt nam repellat eveniet modi tempora cum ven</p>
-            </div>
-            <div class="guia__habilidades__contenido">
-                <img src="./imagenes/imagenes_proyecto/iconos/Campeones/camille-hextech-ultimatum.webp" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ipsum culpa quasi laborum officia sed doloremque, at, voluptates nesciunt nam repellat eveniet modi tempora cum ven</p>
-            </div>
-         </div>
-            <div class="guia__build">
-                <p class="guia__txt">Build:</p>
-                <div class="guia__build__items">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/botasarm.webp" alt="">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/Trinity.webp" alt="">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/deaths-dance-46x.webp" alt="">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/guardian-angel-46x.webp" alt="">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/177654-estropieur-orig-1-64x64-1.png" alt="">
-                    <img src="./imagenes/imagenes_proyecto/iconos/Campeones/spirit-visage-46x.webp" alt="">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quos numquam facilis expedita? Saepe quisquam magnam pariatur, optio, quaerat ratione inventore, delectus consectetur reprehenderit quos fuga deserunt praesentium repudiandae repellendus!</p>
-            </div> -->
-    <!--    ESTA SECCION ES LA QUE MAYOR INFORMACION E IMAGENES CONTIENE      -->  
-    <!--    POR ENDE MOMENTANEAMENTE SOLO HAY UNA GUIA SIN INFO               -->
-    <!--    EL OBJETIVO ES TENER UNA GUIA POR CAMPEON                         -->
-    <!--    ADEMAS QUE NO ESTA DETALLADA NI LA INFO DE HABILIDADES NI RUNAS  -->                                                                                                                                              
+      </div>                                                                                                                                            
     <footer class="footer">
         <div class="paralelograma">
          <a href="./index.html"><h4>MbGaming/</h4></a>
@@ -173,5 +137,7 @@
             </div>
         </div>
     </footer> 
+    <script src="./jsscroll/bootstrap.bundle.min.js"></script>
+    <script src="./jsscroll/scroll.js"></script>
 </body>
 </html>

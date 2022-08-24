@@ -12,43 +12,61 @@
         <title>MbGaming/</title>
     </head>
 <body>
-    <header class="header__index">
-        <a href="./index.html" class="logo__index">MbGaming/</a>
-        <nav class="nav__index">
-            <ul class="nav__links">
-                <li class="li__item">
-                    <a href="./index.html" class="nav__link">Inicio</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid gap-5">
+              <a class="navbar-brand" href="./index.html">MbGaming/</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
-                <li class="li__item">
-                    <a href="./seccion_noticias.html" class="nav__link">Noticias</a>
-                </li>
-                <li class="li__item">
-                    <a href="./seccion_guias.html" class="nav__link">Guias</a>
-                </li>
-                <li class="li__item">
-                    <a href="./seccion_parche.html" class="nav__link">Parches</a>
-                </li>
-                <li class="li__item">
-                    <a href="./seccion_esports.html" class="nav__link">Esports</a>
-                </li>
-            </ul>
-            <a href="#nav" class="nav__hamburguer">
-                <img src="./imagenes/menu.svg" class="nav__icon">
-            </a>
+                  <li class="nav-item--sesion">
+                    <a class="nav-link active" href="#">Iniciar Sesión</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_guia.html">Guias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./seccion_parche.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Parches
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Parche Actual</a></li>
+                        <li><a class="dropdown-item" href="#">Parche 3.2</a></li>
+                        <li><a class="dropdown-item" href="#">Parche 3.1</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./seccion_esports.html">Esports</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="login hide">
+                <p>Iniciar Sesión </p> 
+               <a class="login__img" href="#"> <img src="./imagenes/icons8-login-64.png" alt=""></a>
+               </div>
+            </div>
         </nav>
-    </header>
+      </header>
     <main class="parche__portada">
         <div class="parche__encabezado">
             <img src="./imagenes/kassaheader.png" alt="">
         </div>
-        <div class="dropdown">
+        <div class="dropdown2">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Parches
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Parche 3.2</a></li>
-              <li><a class="dropdown-item" href="#">Parche 3.1</a></li>
-              <li><a class="dropdown-item" href="#">Parche 3.0</a></li>
+              <li><a class="dropdown-item" href="./seccion_parche.html">Parche 3.2</a></li>
+              <li><a class="dropdown-item" href="./seccion_parche.html">Parche 3.1</a></li>
+              <li><a class="dropdown-item" href="./seccion_parche.html">Parche 3.0</a></li>
             </ul>
         </div>
         <div class="parche__titulo">
@@ -138,7 +156,6 @@
                 <a title="Instagram"href="https://www.instagram.com/" target="_blank"><img src="./imagenes/iconos_redes/icons8-instagram-48.png" alt="instagram" ></a>
             </div>
         </div>
-        
     </footer>
     <script src="./jsscroll/scroll2.js"></script>
     <script src="./jsscroll/bootstrap.bundle.min.js"></script>
