@@ -1271,64 +1271,30 @@ INICIO MAIN ESPORTS
 /*!MOBILE 480 , TABLET 768*/
 @media screen and (max-width:768px) {
     /*!HEADER GENERAL*/
-    header{
-        width: 768px;
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-    }
-    header ul li a {
-        font-size: 0.9rem;
-        margin-top: 5px;
-    }
-    main{
-        margin: 50px 0px;
-    }
+   
     /* ! FIN HEADER GENERAL*/
-
-
-    /*!INICIO HEADER DEL INDEX*/
-    .header__index{
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        background: #0028be;
-        width: 768px;
+    .hide{
+        display: none;
     }
-    .nav__index{
-        justify-content: flex-end;
-    }
-    .logo__index{
-        color: #fff;
-    }
-    .header__index ul li a {
-        display: flex;
-        margin: 0px;
-        color: #fff;
-        margin: 8px;
-    }
-    /* ! FIN HEADER INDEX
-
-
-    ? INICIO MAIN INDEX */
-    .index__main{
-        margin: 120 5 10px;
-    }
-    .index__titulo, .index__subtitulo{
-        left: 1%;
-        top:40%;
-    }
-    .index__titulo{
-        font-size: 1rem;
+    .index__main .index__titulo, .index__subtitulo{
+        font-size: 1.4rem;
+        left: 5%;
     }
     .index__subtitulo{
-        top: 46%;
-        font-size: .8rem;
+        margin-top: 10px;
     }
+    .nav-item--sesion{
+        display: block;
+    }
+    /* INICIO MAIN INDEX */
+    
     /* ?FIN MAIN INDEX
 
 
     ? INICIO SLIDE  */
+    .slide__text{
+        margin-top: -100px;
+    }
     .slide__text p{
         margin: 0;
     }
@@ -1377,6 +1343,7 @@ INICIO MAIN ESPORTS
         box-shadow: none;
         align-self: center;
         margin-top: 26px;
+        margin-top: -120px;
 
     }
     .noticia__title{
@@ -1507,9 +1474,8 @@ INICIO MAIN ESPORTS
         width: 768px;
         object-fit: cover;
     }
-    .dropdown{
+    .dropdown2{
         width: 768px;
-        margin-top: 500px;
         margin-left: 60px;
         align-self: center;
     }
@@ -1536,9 +1502,9 @@ INICIO MAIN ESPORTS
     .guia__titulo{
         border: none;
         box-shadow: none;
-        margin-top: 100px;
         margin-bottom: 5px;
         gap: 10px;
+        margin-top: 20px;
     }
     .guia__titulo h1{
         font-size: 2.7rem;
@@ -1546,6 +1512,7 @@ INICIO MAIN ESPORTS
     .guia__titulo p{
         font-size: 1.1rem;
         font-weight: 600;
+        
     }
     .row,
     .guia__campeon,
@@ -1580,8 +1547,8 @@ INICIO MAIN ESPORTS
 
     /*? INICIO SECCION ESPORTS*/
     .esports__titulo{
-        margin-top: 40px;
         padding: 20px;
+        margin-top: -120px;
     }
     .esports__parrafo{
         margin-top: 10px;
@@ -1675,63 +1642,25 @@ INICIO MAIN ESPORTS
 
 }
 @media screen and (max-width:480px) {
-    /*!HEADER GENERAL*/
-
-    header{
-        display: flex;
-        justify-content: flex-start;
-    }
-    nav{
-        display: flex;
-        width: 100%;
-    }
-    .nav__hamburguer{ /*FALTA CENTRAR*/
-        display: flex;
-        align-self:center;
-        justify-content: right;
-        margin: 0px;
-    }
-    .nav__hamburguer img{
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-    }
-    .nav__links{
-        display: none;
-    }
-    .logo{
-        display: flex;
-        align-self: flex-start;
-        padding: 0%;
-    }
-    /*!FIN HEADER GENERAL*/
-
-
-    /* !INICIO HEADER INDEX*/
-    .nav__index .nav__hamburguer{
-        display: flex;
-        margin-right: 28px;
-    }
-    .header__index ul li a{
-        display: none;
-        justify-content: space-between;
-    }
-    /*!FIN HEADER INDEX*/
-
-
+   
     /*?iNICIO MAIN INDEX*/
     .index__main img{
-        top: -17%;
+        margin-top: 0px;
     }
-    .index__subtitulo{
-        top: 50%;
+    .index__main .index__titulo{
+        top: 0%;
+        font-size: 1rem;
+    }
+    .index__main .index__subtitulo{
+        top: 5%;
+        font-size: 1rem;
     }
     /*? FIN MAIN INDEX*/
 
 
     /*?INICIO SLIDE MAIN*/
     .slide__text{
-        margin-top: 25px;
+        margin-top: -120px;
     }
     .content{
         padding: 5px;
@@ -1898,13 +1827,11 @@ INICIO MAIN ESPORTS
         height: 400px;
         object-fit: cover;
     }
-    .dropdown{
+    .dropdown2{
         width: 480px;
-        margin-top: 380px;
         margin-left: 60px;
         margin-bottom: 20px;
         align-self: center;
-        margin: 380px 60px 20px 100px;
     }
     .parche__titulo h1 {
         font-size: 2.4rem;
