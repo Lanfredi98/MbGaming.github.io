@@ -1,0 +1,94 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/bootstrap.min.css">
+    <title>MbGaming/</title>
+    <style>
+        body{
+            background: #ffe259;
+            background: linear-gradient(to right, #ffa751, #ffe259);
+        }
+        .bg{
+            background-image: url(./imagenes/Ryze_0.jpg);
+            background-repeat: no-repeat; /* PREGUNTAR OPCION DE COMO CENTRAR*/
+        }
+        .customHeight{
+            height: 717px;
+        }
+        .col .customMargin{
+            margin-left: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg rounded-start d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+            </div>
+            <div class="col bg-white p-5 pt-0 rounded-end customHeight">
+                <!-- <div class="text-end">
+                    <img src="./imagenes/icono-removebg-preview.png" width="48px" alt="icono">
+                </div> -->
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type=password" class="form-control" name="password"> <!--PONER PASSOCULTA-->
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión 
+                        </button>
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#">Registrate</a></span><br>
+                        <span><a href="#">Recuperar Password</a></span>
+                    </div>
+                </form>
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div> 
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-outline-primary w-100 my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="./imagenes/iconos_redes/icons8-facebook-48.png" width="42" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center customMargin">
+                                            Facebook
+                                         </div>   
+                                    </div>
+                                </button>
+                            <div class="col">
+                                <button class="btn btn-outline-danger w-100 my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="./imagenes/iconos_redes/icons8-google-48.png" width="40" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center customMargin">
+                                            Google
+                                         </div>   
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./jsscroll/bootstrap.bundle.min.js"></script>
+</body>
+</html>
