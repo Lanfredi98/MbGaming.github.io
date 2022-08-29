@@ -1,0 +1,395 @@
+$color-principal:#0028be;
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.navbar{
+    background-color: $color-principal !important;
+    justify-content: space-between;
+    .navbar-brand{
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 3rem;
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
+        transition: 1.2s;  
+    }
+    .nav-link.active{
+        color: #fff;
+
+    }
+    .navbar-brand:hover{
+        transform: scale(1.1);
+        color: #fff;
+    }
+    .nav-link{
+        margin-left: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 2px;
+        transition: 1s;
+    }
+    .nav-link:hover{
+        transform: scale(1.1);
+        color: #fff;
+    }
+    .nav-item--sesion{
+        display: none;
+    }
+    .login{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100px;
+        gap: 12px;
+        margin-top: 10px;
+        margin-right: 30px;
+        p{
+            align-self: center;
+            color: #fff;
+            font-size: 14px;
+            align-self: center;
+            font-family: 'Nunito', sans-serif;
+            cursor: default;
+        }
+        img{
+            display: flex;
+            width: 40px;
+            height: 40px;
+            align-self: center;
+            transition: 1s ease;
+        }
+        img:hover{
+            transform: scale(1.3);
+        }
+    }
+}
+.parche__portada{
+    .parche__encabezado{
+        img {
+            position: relative;
+        }
+    }
+    .dropdown2 {
+        display: flex;
+        align-self: center;
+        width: 800px;
+        justify-content: left;
+        margin-top: 30px; 
+        .btn{
+            background-color: $color-principal;
+            color: #fff;
+            letter-spacing: 1.2px;
+        }
+    }
+    .parche__titulo{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        max-width: 800px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        gap: 10px;
+        p{
+         text-transform: lowercase;    
+         font-size: 1.3rem;
+         font-family: 'Nunito',sans-serif;
+         align-self: left;
+        }
+        h1{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.3em;
+        text-transform: uppercase;
+        align-self: left;
+        
+        }
+        .parche__lorem{
+            align-self: center;
+            color: #000;
+            font-size: 1.3rem;
+        }
+    }
+    .parche__contenido{
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+            h3{
+                font-family: 'Oswald' , sans-serif;
+                font-size: 3.7em;
+                margin: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            h5{
+                font-family: 'Oswald', sans-serif;
+                font-size: 2em;
+                color: $color-principal;
+                margin: 10px;
+            }
+            img{
+            width: 630px;
+            display: flex;
+            align-self: center;
+            }
+            p{
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                text-align: center;  
+            } 
+            span {
+                font-family: 'Oswald', sans-serif;
+                font-size: 2em;
+                color: $color-principal;
+                margin: 10px;
+                display: flex;
+                align-self: center;
+            }
+    }
+    .parche__campeones{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 800px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        .parche__card{
+            width: 600px;
+            align-self: center;
+        }
+        .parche__card__campeon{
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .parche__card__cambios{
+            font-family: 'Nunito', sans-serif;
+            margin: 10px 0px 10px 0px ;
+            font-weight: 300;
+        }
+        hr{
+            margin-left: 50px;
+        }
+        .parche__card__habilidades {
+            display: flex;
+            gap: 5px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin-bottom: 4px;
+                }
+         }
+        span{
+            font-family: 'Nunito', sans-serif;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+        }
+    }
+    
+}
+footer{
+        display: flex;
+        gap: 50px;
+        margin-top: 40px;
+        .paralelograma{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:$color-principal;
+            width: 50vw;
+            transform: skew(-20deg) translateX(-50px);
+            h4{
+                color: #fff;
+                font-family: 'Oswald', sans-serif;
+                font-size: 4.5em;
+                font-weight: bold;
+                padding: 20px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .contacto{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            width: 50vw;
+            padding: 20px;
+            .contacto__info{
+                display: flex;
+                justify-content: space-between;
+                gap: 40px; 
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    color: $color-principal;
+                    font-family:'Oswald',sans-serif;
+                    font-weight: bold;
+                }
+            }
+            .redes{
+                img{
+                    width: 40px;
+                    height: 40px;
+                } 
+                } 
+            }
+}
+@media screen and (max-width:768px){
+    main{
+        gap: 20px;
+     }
+    .navbar-nav{
+        .nav-item--sesion{
+            display: block;
+        }
+    }
+    .login.hide{
+        display: none;
+    }
+
+    .parche__portada{
+        .parche__encabezado{
+            img{
+                width: 768px;
+                height: 270px;
+            }
+        }
+        .dropdown2{
+            margin-top: 5px;
+            width: 720px;
+        }
+        .parche__titulo{
+            width: 720px;
+            max-width: 720px;
+            border: none;
+        }
+    
+    .parche__contenido{
+        border: none;
+        width: 720px;
+        max-width: 720px;
+    }
+    .parche__campeones{
+        width: 720px;
+        max-width: 720px;
+        border: none;
+    }
+}
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .paralelograma{
+            width: 100%;
+            max-width: 768px;
+            transform: none;
+            h4{
+                padding: 0px;
+                margin: 20px;
+            }
+        }
+        .contacto{
+            width: 768px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            .contacto__info{
+                gap: 90px;
+                margin-left: -50px;
+            }
+            .redes{
+                width: 100%;
+                max-width: 768px;
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 10px;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:480px){
+   
+    .parche__portada{
+        width: 480px;
+        max-width: 480px;
+        border: none;
+        .parche__encabezado{
+            img{
+                width: 480px;
+                height: 480px;
+                object-fit: cover;
+            }
+        }
+        img{
+            width: 480px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .dropdown2{
+            width: 420px;
+        }
+        .parche__titulo{
+            width: 420px;
+            max-width: 420px;
+        }
+        .parche__contenido{
+            width: 420px;
+            border: none;
+            img{
+                width: 450px;
+                height: 112px;
+            }
+        }
+        .parche__campeones{
+            max-width: 420px;
+            img{
+                width: 450px;
+                height: 112px;
+                align-self: center;
+            }
+            .parche__card{
+                max-width: 420px;
+            }
+        }
+    }
+    footer{
+        .paralelograma{
+            max-width: 480px;
+        }
+        .contacto{
+            width: 480px;
+            max-width: 480px;
+            margin-left:0px ;
+            .contacto__info{
+                max-width: 480px;
+                gap:15px;
+            }
+            .redes{
+                max-width: 480px;
+            }
+        }
+    }
+    
+}
+
