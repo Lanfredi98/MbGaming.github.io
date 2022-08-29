@@ -8,51 +8,13 @@ body{
     font-family: 'Urbanist', sans-serif;
 }
 /*! HEADER ACERCA DE GENERAL */
-.container__acerca{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    overflow: hidden;
-}
+
 .hero{
     background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
     color: #fff;
     display: grid;
     grid-template-rows: max-content 1fr;
-    grid-template-areas:
-    "nav"
-    "content";
 }
-.nab{
-    grid-area: "nav";
-    display: grid;
-    justify-content: space-between;
-    grid-auto-flow: column;
-    gap: 1em;
-    align-items: center;
-    height: 90px;
-}
-.nab__list{
-    list-style: none;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1em;
-}
-.nab__link{
-    text-decoration: none;
-    color:#fff
-}
-.nab__logo{
-    font-size: 1.8rem;
-    font-weight: 300;
-}
-.nab__menu{
-    display: none;
-}
-.nab__icon{
-    width: 30px;
-}
-/*!FIN HEADER*/
 
 
 /*!SECCION INICIO*/
@@ -142,6 +104,8 @@ body{
     margin: 0 auto;
 }
 .contact-box h3{
+    display: grid;
+    
     font-weight: bolder;
     font-size: 1.4rem;
     color: #1c00b5;
