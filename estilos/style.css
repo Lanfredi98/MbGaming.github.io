@@ -1109,7 +1109,7 @@ INICIO MAIN ESPORTS
     font-weight:600;
     align-self: center;
     letter-spacing: 1.2px;
-    margin-left: 15px;
+    
 }
 .guia__habilidades{
     display: flex;
@@ -1485,9 +1485,15 @@ INICIO MAIN ESPORTS
     .guia__build{
         width: 728px;
     }
-
+    .guia__campeon{
+        margin: 0px;
+    }
+    .container-fluid .col{
+        padding: 0%;
+    }
     .guia__campeon img{
-       margin-left: -30px;
+        margin: 0 auto;
+       width: 720px;
     }
     .guia__campeon h4{
         margin-left: 0px;
@@ -1495,6 +1501,7 @@ INICIO MAIN ESPORTS
     }
     .guia__txt__main .guia__txt{
         align-self: flex-start;
+        margin: 0px;
     }
     .guia__habilidades__contenido p{
         letter-spacing: 1.2px;
