@@ -1,0 +1,12 @@
+El SEO fue modificado en todas las secciones principales del proyecto
+
+Descripcion:
+            Con el uso de la etiqueta META, fueron agregadas las Descripciones de las paginas, por ejemplo en el index ""Bienvenido a MbGaming, la primera pagina en la cual encontraras toda la informacion que necesitas para League of Legends: Wild Rift""
+Keywords: 
+            Mediante la etiqueta meta name Keywords, fueron agregadas las palabras claves que en su mayoria son las mismas, aunque en el navegacion dentro del proyecto en algunas
+            secciones fueron agregadas mas Keywords relacionadas al contenido de dicha seccion
+Encabezado: 
+            Correccion e incorporacion de distintos h1 del proyecto  
+
+SASS:
+    El trabajo en SASS fue realizado en la seccion PARCHE, tanto el map, map get, mixin, y extendgit 
