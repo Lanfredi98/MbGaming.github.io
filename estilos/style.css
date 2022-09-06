@@ -544,7 +544,7 @@ INICIO MAIN SECCION "GUIAS"*/
     margin-top: 20px;
     box-shadow: 0px 0px 19px 6px rgba(0,0,0,0.1);
 }
- .main__guias h2{
+ .main__guias h1{
     color: #0028be;
     font-family: 'Oswald',sans-serif;
     font-size: 4.5em;
@@ -1315,10 +1315,7 @@ INICIO MAIN ESPORTS
         align-self: center;
         padding:0px;
     }
-    .noticia__titletext p {
-        margin-bottom: 2px;
-        height: 90px;
-    }
+
     .noticia__contenido{
         display: flex;
         flex-direction: column;
@@ -1918,6 +1915,7 @@ INICIO MAIN ESPORTS
         display: flex;
         flex-direction: column;
         gap: 20px;
+        max-width: 480px;
     }
     .paralelograma{
         width: 100%;

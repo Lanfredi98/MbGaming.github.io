@@ -51,6 +51,7 @@ main {
       display: flex;
       width: 40px;
       height: 40px;
+      width: 40px;
       align-self: center;
       transition: 1s ease; }
     .navbar .login img:hover {
@@ -95,6 +96,30 @@ main {
     align-self: center;
     color: #000;
     font-size: 1.3rem; }
+    .parche__portada .parche__titulo .parche__lorem .youtube {
+      color: #d16e8d;
+      font-weight: 600; }
+    .parche__portada .parche__titulo .parche__lorem .articulo {
+      color: #FFAC83;
+      font-weight: 600; }
+    .parche__portada .parche__titulo .parche__lorem .comunidad {
+      color: #35bd35fa;
+      font-weight: 600; }
+    .parche__portada .parche__titulo .parche__lorem .facebook {
+      color: #0c4cfa;
+      font-weight: 600; }
+  .parche__portada .parche__titulo .parche__btn {
+    background-color: #0028be;
+    color: #fff;
+    font-family: "Nunito";
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #0028be;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    align-self: center; }
 
 .parche__portada .parche__contenido {
   width: 800px;
@@ -129,6 +154,18 @@ main {
     margin: 10px;
     display: flex;
     align-self: center; }
+  .parche__portada .parche__contenido .parche__link, .parche__portada .parche__contenido .link__analisis {
+    color: #0028be;
+    width: 340px;
+    font-family: 'Nunito' ,sans-serif;
+    font-size: 1.3em;
+    border: 1px solid #0028be;
+    border-radius: 8px;
+    padding: 4px;
+    color: #0028be;
+    text-decoration: none;
+    text-align: center;
+    align-self: center; }
 
 .parche__portada .parche__campeones {
   display: flex;
@@ -155,8 +192,8 @@ main {
     display: flex;
     gap: 5px; }
     .parche__portada .parche__campeones .parche__card__habilidades img {
-      width: 40px;
       height: 40px;
+      width: 40px;
       border-radius: 20px;
       margin-bottom: 4px; }
   .parche__portada .parche__campeones span {
@@ -207,8 +244,8 @@ footer {
         font-family: 'Oswald',sans-serif;
         font-weight: bold; }
     footer .contacto .redes img {
-      width: 40px;
-      height: 40px; }
+      height: 40px;
+      width: 40px; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -218,8 +255,8 @@ footer {
   .login.hide {
     display: none; }
   .parche__portada .parche__encabezado img {
-    width: 768px;
-    height: 270px; }
+    height: 270px;
+    width: 768px; }
   .parche__portada .dropdown2 {
     margin-top: 5px;
     width: 720px; }

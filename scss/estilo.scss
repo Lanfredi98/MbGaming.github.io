@@ -1,4 +1,28 @@
 $color-principal:#0028be;
+$map:(
+    youtube:#d16e8d,
+    articulo:#FFAC83,
+    comunidad:#35bd35fa,
+    facebook:#0c4cfa,
+);
+$boton:(
+    letra:#fff,
+    fuente:'Nunito',
+    pd: 5px,
+    size: 1rem,
+    fondo: #0028be,
+    borde: 1px solid #0028be,
+    radio: 8px,
+    decoration: none,
+    contenido:center,
+    ancho:100px,
+    centro:center
+);
+@mixin size ($alto, $ancho){
+    height: $alto;
+    width: $ancho;   
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -59,7 +83,7 @@ main{
         img{
             display: flex;
             width: 40px;
-            height: 40px;
+            @include size(40px,40px);
             align-self: center;
             transition: 1s ease;
         }
@@ -114,6 +138,26 @@ main{
             align-self: center;
             color: #000;
             font-size: 1.3rem;
+            @each $item, $color in $map {
+                .#{$item}{
+                    color: $color;
+                    font-weight: 600;
+                }
+            }
+        }
+        .parche__btn{
+            background-color: map-get($boton , fondo);
+            color: map-get($boton , letra);
+            font-family: map-get($boton, fuente);
+            padding: map-get($boton, pd);
+            font-size: map-get($boton, size);
+            border: map-get($boton, borde );
+            text-decoration: map-get($boton, decoration );
+            border-radius: map-get($boton, radio);
+            width: map-get($boton, ancho);
+            text-align: map-get($boton, centro);
+            align-self: map-get($boton, centro);
+
         }
     }
     .parche__contenido{
@@ -154,6 +198,23 @@ main{
                 display: flex;
                 align-self: center;
             }
+            .parche__link{
+                color: #0028be;
+                width:340px;
+                font-family: 'Nunito' ,sans-serif;
+                font-size: 1.3em;
+                border: 1px solid #0028be;
+                border-radius: 8px;
+                padding: 4px;
+                color:#0028be;
+                text-decoration: none;
+                text-align: center;
+                align-self: center;
+            }
+            
+            .link__analisis{
+                @extend.parche__link;
+            }
     }
     .parche__campeones{
         display: flex;
@@ -184,8 +245,7 @@ main{
             display: flex;
             gap: 5px;
                 img{
-                    width: 40px;
-                    height: 40px;
+                    @include size(40px,40px );
                     border-radius: 20px;
                     margin-bottom: 4px;
                 }
@@ -201,7 +261,7 @@ main{
             font-weight: bold;
         }
     }
-    
+   
 }
 footer{
         display: flex;
@@ -248,8 +308,7 @@ footer{
             }
             .redes{
                 img{
-                    width: 40px;
-                    height: 40px;
+                    @include size(40px, 40px )
                 } 
                 } 
             }
@@ -270,8 +329,7 @@ footer{
     .parche__portada{
         .parche__encabezado{
             img{
-                width: 768px;
-                height: 270px;
+                @include size(270px,768px)
             }
         }
         .dropdown2{
