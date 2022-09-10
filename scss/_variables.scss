@@ -1,0 +1,59 @@
+$color-principal:#0028be;
+$color-secundario:#001478;
+$nunito: 'Nunito';
+$oswald: 'Oswald';
+$sombra:  0px 0px 19px 6px rgba(0,0,0,0.1);
+$borde: 1px solid #0028be;
+$map:(
+    youtube:#d16e8d,
+    articulo:#FFAC83,
+    comunidad:#35bd35fa,
+    facebook:#0c4cfa,
+);
+$boton:(
+    letra:#fff,
+    fuente:'Nunito',
+    pd: 5px,
+    rem: 1rem,
+    fondo: #0028be,
+    borde: 1px solid #0028be,
+    radio: 8px,
+    decoration: none,
+    contenido:center,
+    ancho:100px,
+    centro:center
+);
+@mixin size ($alto, $ancho){
+    height: $alto;
+    width: $ancho;   
+}
+@mixin mb ($medida: 480px) {
+    @media  screen  and (max-width:$medida){
+        @content;
+    }
+}
+%titulo{
+    text-transform: uppercase;
+    font-family: $oswald , sans-serif;     
+}
+%button{
+    font-family:$nunito,sans-serif;
+    font-size: 1.3em;
+    border: $borde;
+    border-radius: 8px;
+    padding: 4px;
+    color:$color-principal;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    &:hover{
+        background-color:#0028be;
+                color: #fff;
+                transition: all 0.4s ease;
+    }
+}
+%hrline{
+    color: #000;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}

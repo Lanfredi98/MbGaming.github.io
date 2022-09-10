@@ -1,0 +1,216 @@
+
+.guia__titulo{
+    box-shadow: $sombra;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 120px;
+    @include mb(){max-width: 420;}
+    @include mb(768px){
+
+    }
+        h1{
+            font-family: $oswald, sans-serif;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1.4;
+            align-self: flex-start;
+            color: $color-principal;
+        }
+        p{
+            font-family: $nunito, sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 1.1px;
+        }
+}
+.container-fluid{
+    margin-top: 20px;
+    @include mb(){
+        margin-top: 0;
+        padding: 0px;
+    }  
+    @include mb(){
+    }
+}
+.row{
+    width: 1000px;
+    margin: 0 auto;
+    @include mb(768px){
+        width: 720px
+    }
+    @include mb(){
+        width: 420px;
+        padding: 0;
+    }
+    .guia__campeon{
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 10px;
+        margin: 15px;
+        @include mb(768px){
+            width: 720px;
+            margin: 0px;
+        }
+        @include mb(){
+            width: 420px;
+        }
+        img{
+            @include size(400px, 800px);
+            align-self: center;
+            @include mb(768px){
+                @include size(400px,700px);
+                margin-left: -50px;
+            }
+            @include mb(){
+                width: 420px;
+            }
+        }
+        .txt__map{
+            text-transform: uppercase;
+            font-family: $oswald, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1.2;
+            color: $color-principal;
+            display: flex;
+            align-self: start;
+            margin-top: 20px;
+        }
+        p{
+            @extend .txt__map;
+            font-family: $nunito,sans-serif;
+            text-transform: lowercase;
+            font-size: 1.3rem;
+            letter-spacing: normal;
+            font-weight: 600;
+            align-self: center;
+            color: #000;
+        }
+        
+    }
+}
+.guia__txt__main{ /* EXTEND SIN FUNCIONAR*/
+    // @extend .txt__map;
+    text-transform: uppercase;
+    font-family: $oswald, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    color: $color-principal;
+    display: flex;
+    align-self: start;
+    margin-top: 20px;
+    @include mb(){
+       padding: 0;
+    }
+    
+}
+.guia__runas{
+    margin: 15px;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    max-width: 420px;
+    justify-content: space-around;
+    gap: 50px;
+    @include mb(){
+        margin-left: -5px;
+        justify-content:space-between    }
+}
+.guia__runas__txt{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    align-self:center;
+    justify-content: center;
+    letter-spacing: 1.2px;
+}
+.guia__habilidades{/* EXTEND SIN FUNCIONAR*/
+    display: flex;
+    width: 100%;
+    align-self: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px; 
+    @include mb(){
+        padding: 0;
+    }
+            .guia__txt{
+                // @extend .txt__map;
+                text-transform: uppercase;
+                font-family: $oswald, sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+                letter-spacing: 1.2;
+                color: $color-principal;
+                display: flex;
+                align-self: start;
+                margin-top: 20px;
+            }
+            .guia__habilidades__contenido{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                @include mb(){
+                    img{
+                        @include size (50px,50px)
+                    }
+                }
+                    p{
+                        align-self: center;
+                        font-family: $nunito, sans-serif;
+                        font-weight: 600;
+                        letter-spacing: 1.2px;
+                        @include mb(){
+                            letter-spacing: 1;
+                            margin-top: -5px;
+                        }
+                    }
+            }        
+}
+.guia__build{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    gap:20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    @include mb(){
+        padding: 0;
+    }
+        p{
+            display: flex;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            align-self: center;
+        }
+        .guia__txt{
+            text-transform: uppercase;
+            font-family: $oswald, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1.2;
+            color: $color-principal;
+            display: flex;
+            align-self: start;
+            margin-top: 20px;
+        }
+        .guia__build__items{
+            display: flex;
+            justify-content: space-around;
+            img{
+                @include size(60px,60px)
+            }
+        }
+}
+

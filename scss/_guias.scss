@@ -1,0 +1,143 @@
+
+.main__guia{
+    .main__guias{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1250px;
+        padding: 15px;
+        box-shadow: $sombra;
+        margin-top: 120px;
+        h1{
+            color: $color-principal;
+            font-family: $oswald, sans-serif;
+            font-size: 4.5rem;
+            font-weight: bolder;
+        }
+        p{
+            font-family:$nunito , sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    }
+}
+.main__tabla__campeones{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(10, auto);
+    padding: 20px;
+    grid-template-areas:
+    "topl topl topl topl "
+    "fiora  darius  renekton  riven"
+    "jungle jungle jungle jungle"
+    "wukong xinzhao khazix  leesin"
+    "mid mid mid mid"
+    "zed ahri diana ziggs"
+    "adc adc  adc   adc"
+    "corki ezreal cait lucian"
+    "support support support support"
+    "yummi thresh rakan nautilus";
+        @include mb(768px){
+            grid-template-columns: repeat(2 , 1fr);
+            grid-template-rows: repeat(15, auto);
+            padding: 20px;
+            gap: 30px;
+            grid-template-areas:
+            "topl topl"
+            "fiora  darius"
+            "renekton  riven"
+            "jungle jungle"
+            "wukong xinzhao"
+            "khazix  leesin"
+            "mid mid"
+            "zed ahri"
+            "diana ziggs"
+            "adc adc"
+            "corki ezreal"
+            "cait lucian"
+            "support support"
+            "yummi thresh"
+            "rakan nautilus"
+            ;
+        }
+        @include mb(){ 
+            grid-template-columns: repeat(2 , auto);
+            grid-template-rows: repeat(15, auto);
+            grid-template-areas:
+            "topl   topl"
+            "fiora  darius"
+            "renekton riven"
+            "jungle jungle"
+            "wukong xinzhao"
+            "khazix leesin"
+            "mid mid"
+            "zed ahri"
+            "diana ziggs"
+            "adc adc "
+            "corki ezreal"
+            "cait lucian"
+            "support support"
+            "yummi thresh"
+            "rakan  nautilus"
+            ;
+
+        }
+        .guias__linea{
+            grid-area: topl;
+            display: flex;
+            justify-content: flex-start;
+            align-self: flex-end;
+            font-family: $oswald, sans-serif;
+            color:$color-principal;
+            font-size: 2em;
+            font-weight: 600;
+            text-transform: uppercase;
+        } 
+        .main__row{
+            display: flex;
+            flex-direction: row;
+            transition: transform 1.2s;
+            @include mb(){ img{
+                @include size(100px,100px)
+            }}
+                &:hover{
+                    transform: scale(1.111);
+                }
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: left;
+                    font-family: $nunito, sans-serif;
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    padding: 5px;
+                    @include mb(){
+                        font-size: 1rem;
+                    }
+                }
+        }
+        span{
+        text-transform: uppercase;
+        color: #0028be;
+        font-weight: bold;
+        font-family: 'Oswald';
+        letter-spacing: 1.2px;
+        }
+        h4{
+            @extend.guias__linea;
+            grid-area: jungle;
+        }
+        h5{
+            @extend.guias__linea;
+            grid-area: mid;
+        }
+        h6{
+            @extend.guias__linea;
+            grid-area: adc;
+        }
+        .support{
+            @extend.guias__linea;
+            grid-area: support;
+        }        
+}
