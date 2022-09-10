@@ -1,0 +1,217 @@
+
+.parche__portada{
+    .parche__encabezado{
+        img {
+            position: relative;
+            @include mb(768px){
+                @include size (270px,768px);
+            }
+            @include mb(){
+                width: 480px;
+                object-fit: cover;
+            }
+        }
+    }
+    .dropdown2 {
+        display: flex;
+        align-self: center;
+        width: 800px;
+        justify-content: left;
+        margin-top: 30px; 
+        @include mb(768px){ 
+            width: 720px;
+            margin-top: 5px;
+        }
+        @include mb(){
+            width: 480px;
+        }
+        .btn{
+            background-color: $color-principal;
+            color: #fff;
+            letter-spacing: 1.2px;
+        }
+    }
+    .parche__titulo{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        max-width: 800px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        gap: 10px;
+            @include mb(768px){ 
+            width: 720px;
+            border: none;
+            }
+            @include mb(){
+                width: 480px;
+            }
+        p{
+         text-transform: lowercase;    
+         font-size: 1.3rem;
+         font-family: 'Nunito',sans-serif;
+         align-self: left;
+        }
+        h1{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.3em;
+        text-transform: uppercase;
+        align-self: left;
+        
+        }
+        .parche__lorem{
+            align-self: center;
+            color: #000;
+            font-size: 1.3rem;
+            @each $item, $color in $map {
+                .#{$item}{
+                    color: $color;
+                    font-weight: 600;
+                }
+            }
+        }
+        .parche__btn{
+            background-color: map-get($boton , fondo);
+            color: map-get($boton , letra);
+            font-family: map-get($boton, fuente);
+            padding: map-get($boton, pd);
+            font-size: map-get($boton, rem);
+            border: map-get($boton, borde );
+            text-decoration: map-get($boton, decoration );
+            border-radius: map-get($boton, radio);
+            width: map-get($boton, ancho);
+            text-align: map-get($boton, centro);
+            align-self: map-get($boton, centro);
+
+        }
+    }
+    .parche__contenido{
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        @include mb(768px){
+            border: none;
+        }
+        @include mb(){
+            width: 480px;
+        }
+            h3{
+                font-family: 'Oswald' , sans-serif;
+                font-size: 3.7em;
+                margin: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+                @include mb(768px){
+                    align-self: center;
+                }
+            }
+            h5{
+                font-family: 'Oswald', sans-serif;
+                font-size: 2em;
+                color: $color-principal;
+                margin: 10px;
+                @include mb(768px){
+                    align-self: center;
+                }
+            }
+            img{
+            width: 630px;
+            display: flex;
+            align-self: center;
+            @include mb(){
+                width: 470px;
+            }
+            }
+            p{
+                font-size: 1.2rem;
+                font-family: 'Nunito', sans-serif;
+                text-align: center;  
+            } 
+            span {
+                font-family: 'Oswald', sans-serif;
+                font-size: 2em;
+                color: $color-principal;
+                margin: 10px;
+                display: flex;
+                align-self: center;
+            }
+            .parche__link{
+                color: #0028be;
+                width:340px;
+                font-family: 'Nunito' ,sans-serif;
+                font-size: 1.3em;
+                border: 1px solid $color-principal;
+                border-radius: 8px;
+                padding: 4px;
+                color:#0028be;
+                text-decoration: none;
+                text-align: center;
+                align-self: center;
+            }
+            
+            .link__analisis{
+                @extend.parche__link;
+            }
+    }
+    .parche__campeones{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 800px;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        @include mb(768px){
+            border: none;
+        } @include mb(){
+            width: 480px;
+        }
+        .parche__card{
+            width: 600px;
+            align-self: center;
+             @include mb(){
+                width: 470px;
+                padding: 10px;
+            }
+        }
+        .parche__card__campeon{
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .parche__card__cambios{
+            font-family: 'Nunito', sans-serif;
+            margin: 10px 0px 10px 0px ;
+            font-weight: 300;
+        }
+        hr{
+            margin-left: 50px;
+        }
+        .parche__card__habilidades {
+            display: flex;
+            gap: 5px;
+                img{
+                    @include size(40px,40px );
+                    border-radius: 20px;
+                    margin-bottom: 4px;
+                }
+         }
+        span{
+            font-family: 'Nunito', sans-serif;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+        }
+    }
+   
+}

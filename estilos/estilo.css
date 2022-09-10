@@ -1,12 +1,40 @@
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center; }
+#carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p, .slide__text h1, .esports__titulo p, .esports__titulo h1, .container .carousel .carousel-inner .carousel-item .h5--color {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.slide__noticias .slide__container a, .multimedia .multimedia__contenido a, .slider__titulo a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3em;
+  border: 1px solid #0028be;
+  border-radius: 8px;
+  padding: 4px;
+  color: #0028be;
+  text-decoration: none;
+  transition: all 0.4s ease; }
+  .slide__noticias .slide__container a:hover, .multimedia .multimedia__contenido a:hover, .slider__titulo a:hover {
+    background-color: #0028be;
+    color: #fff;
+    transition: all 0.4s ease; }
+
+hr {
+  color: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px; }
 
 .navbar {
   background-color: #0028be !important;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .navbar .container-fluid {
+    margin: 0px; }
+    @media screen and (max-width: 768px) {
+      .navbar .container-fluid {
+        max-width: 768px; } }
+    @media screen and (max-width: 480px) {
+      .navbar .container-fluid {
+        max-width: 480px; } }
   .navbar .navbar-brand {
     font-weight: bold;
     letter-spacing: 2px;
@@ -57,8 +85,392 @@ main {
     .navbar .login img:hover {
       transform: scale(1.3); }
 
+#carouselExampleDark {
+  height: 1000px; }
+  #carouselExampleDark .carousel-inner .carousel-item img {
+    height: 850px;
+    object-fit: cover; }
+  #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
+    position: relative;
+    top: -120px;
+    left: -38%;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bolder; }
+    @media screen and (max-width: 768px) {
+      #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
+        width: 250px;
+        top: -200px;
+        left: -9%;
+        text-align: left;
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 480px) {
+      #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
+        left: 0%;
+        top: 0%; } }
+  #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
+    left: -40.4%; }
+    @media screen and (max-width: 768px) {
+      #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
+        left: -9%; } }
+
+.hr1 {
+  position: relative;
+  top: -135px; }
+
+.slide__text {
+  margin-top: -110px; }
+  .slide__text h1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 1.2px;
+    color: #0028be; }
+
+.slide__noticias {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  position: relative; }
+  .slide__noticias .slide__container {
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1); }
+    .slide__noticias .slide__container input[type="radio"] {
+      /*se ocultalos controles del input*/
+      display: none; }
+    .slide__noticias .slide__container #two:checked ~ .main-card {
+      /*mueve el elemento cuando checkbox esta checked y el ~ selecciona todoslos items que esten despues*/
+      margin-left: -100%; }
+    @media screen and (max-width: 768px) {
+      .slide__noticias .slide__container {
+        width: 768px;
+        max-width: 768px; } }
+    .slide__noticias .slide__container .main-card {
+      display: flex;
+      justify-content: space-between;
+      width: 200%;
+      transition: 1s; }
+      @media screen and (max-width: 480px) {
+        .slide__noticias .slide__container .main-card {
+          margin-left: 8px; } }
+      .slide__noticias .slide__container .main-card .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10px;
+        justify-content: space-between;
+        gap: 10px; }
+        .slide__noticias .slide__container .main-card .cards .card {
+          width: calc(100% / 3 - 10px);
+          background: #fff;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          transition: all 0.4s ease; }
+          .slide__noticias .slide__container .main-card .cards .card:hover {
+            transform: translateY(-15px);
+            /* mueve la card en ejeY*/ }
+          @media screen and (max-width: 480px) {
+            .slide__noticias .slide__container .main-card .cards .card {
+              width: calc(100% / 1 - 10px); } }
+          .slide__noticias .slide__container .main-card .cards .card .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; }
+            .slide__noticias .slide__container .main-card .cards .card .content .img {
+              height: 100%;
+              width: 100%;
+              margin-bottom: 4px; }
+              .slide__noticias .slide__container .main-card .cards .card .content .img img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover; }
+            .slide__noticias .slide__container .main-card .cards .card .content .details .date {
+              display: flex;
+              font-family: 'Oswald',sans-serif;
+              font-size: 15px;
+              font-weight: 300;
+              align-self: left;
+              padding-left: 4px;
+              color: #000; }
+            .slide__noticias .slide__container .main-card .cards .card .content .details .slide__txt {
+              font-size: 20px;
+              font-family: 'Nunito',sans-serif;
+              color: #0028be;
+              text-align: left;
+              padding: 5px;
+              font-weight: 700; }
+    .slide__noticias .slide__container .button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 20px; }
+      @media screen and (max-width: 480px) {
+        .slide__noticias .slide__container .button {
+          width: auto; } }
+      .slide__noticias .slide__container .button label {
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        background-color: #0028be;
+        margin: 0 4px;
+        cursor: pointer;
+        transition: all 0.5s ease; }
+        .slide__noticias .slide__container .button label .active {
+          width: 35px; }
+    .slide__noticias .slide__container a {
+      width: 100px;
+      position: relative;
+      left: 48%; }
+      @media screen and (max-width: 480px) {
+        .slide__noticias .slide__container a {
+          left: 40%; } }
+
+@media screen and (max-width: 768px) {
+  hr {
+    max-width: 500px; } }
+
+@media screen and (max-width: 480px) {
+  hr {
+    max-width: 400px; } }
+
+.multimedia {
+  min-height: 20vh;
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  align-self: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .multimedia {
+      display: flex;
+      flex-direction: column; } }
+  .multimedia .multimedia__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    justify-content: center;
+    align-self: center; }
+    .multimedia .multimedia__contenido img {
+      height: 100px;
+      width: 200px;
+      display: flex; }
+    .multimedia .multimedia__contenido p {
+      font-family: "Nunito", sans-serif;
+      font-size: 22px;
+      font-weight: 300; }
+    .multimedia .multimedia__contenido .multimedia__contenido--negrita {
+      font-family: "Nunito", sans-serif;
+      font-size: 28px;
+      font-weight: bolder;
+      text-align: center; }
+  .multimedia .multimedia__frame {
+    display: flex;
+    align-self: center; }
+    @media screen and (max-width: 480px) {
+      .multimedia .multimedia__frame {
+        width: 420px; } }
+
+@media screen and (max-width: 768px) {
+  .toast {
+    max-width: 768px; } }
+
+.toast .toast-header img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover; }
+
+.toast .toast-body p {
+  margin-bottom: 5px; }
+
+.toast .toast-body a {
+  color: #133dd8; }
+
+.noticia__dest {
+  margin-top: 120px;
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  /*fin title text*/ }
+  @media screen and (max-width: 768px) {
+    .noticia__dest {
+      width: 720px;
+      box-shadow: none;
+      margin-top: 90px; } }
+  @media screen and (max-width: 480px) {
+    .noticia__dest {
+      width: 420px; } }
+  .noticia__dest .noticia__title {
+    margin: 20px;
+    justify-content: flex-start; }
+    @media screen and (max-width: 768px) {
+      .noticia__dest .noticia__title {
+        justify-content: center;
+        align-self: center; } }
+    .noticia__dest .noticia__title .noticia__titletext, .noticia__dest .noticia__title .noticia__titletext h1 {
+      font-family: "Oswald";
+      text-transform: uppercase;
+      color: #0028be;
+      font-size: 5rem;
+      font-weight: bold; }
+      .noticia__dest .noticia__title .noticia__titletext h1 {
+        font-size: 3.5rem;
+        color: #001478; }
+      .noticia__dest .noticia__title .noticia__titletext .noticia__titletext--color {
+        color: #0028be; }
+  .noticia__dest .noticia__contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 50px 50px 50px;
+    gap: 2em; }
+    @media screen and (max-width: 768px) {
+      .noticia__dest .noticia__contenido {
+        flex-direction: column; } }
+    .noticia__dest .noticia__contenido img {
+      height: 20vw;
+      display: flex; }
+      @media screen and (max-width: 768px) {
+        .noticia__dest .noticia__contenido img {
+          width: 768px;
+          height: 400px;
+          position: relative;
+          object-fit: cover;
+          align-self: center; } }
+      @media screen and (max-width: 480px) {
+        .noticia__dest .noticia__contenido img {
+          width: 480px; } }
+    .noticia__dest .noticia__contenido .noticia__card .noticia__card__title, .noticia__dest .noticia__contenido .noticia__card .noticia__card__subtitle {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      padding-left: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 4.5rem;
+      font-weight: 700; }
+      @media screen and (max-width: 768px) {
+        .noticia__dest .noticia__contenido .noticia__card .noticia__card__title, .noticia__dest .noticia__contenido .noticia__card .noticia__card__subtitle {
+          justify-content: center;
+          padding: 0px; } }
+    .noticia__dest .noticia__contenido .noticia__card .noticia__card__subtitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding: 0px 20px 20px 40px; }
+      @media screen and (max-width: 768px) {
+        .noticia__dest .noticia__contenido .noticia__card .noticia__card__subtitle {
+          padding: 0%; } }
+    .noticia__dest .noticia__contenido .noticia__card .noticia__card__parrafo {
+      font-family: "Nunito", sans-serif;
+      font-weight: 500; }
+      @media screen and (max-width: 768px) {
+        .noticia__dest .noticia__contenido .noticia__card .noticia__card__parrafo {
+          text-align: center; } }
+      .noticia__dest .noticia__contenido .noticia__card .noticia__card__parrafo span {
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: "Nunito", sans-serif; }
+    .noticia__dest .noticia__contenido .noticia__card__boton {
+      border: 1px solid #0028be;
+      font-weight: bold;
+      font-size: 1.4em;
+      font-family: "Nunito", sans-serif;
+      padding: 5px;
+      background-color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      align-self: center;
+      justify-content: center; }
+      @media screen and (max-width: 768px) {
+        .noticia__dest .noticia__contenido .noticia__card__boton:hover {
+          background-color: #001478;
+          color: #fff;
+          transition: all 800ms ease; } }
+
+/*fin noticia destacada*/
+.container {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; }
+  .container .container__card {
+    width: 400px;
+    margin: 20px;
+    border: 1px solid #0028be;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease; }
+    @media screen and (max-width: 768px) {
+      .container .container__card {
+        width: 320px;
+        height: auto; } }
+    @media screen and (max-width: 768px) {
+      .container .container__card .hide {
+        display: none; } }
+    @media screen and (max-width: 480px) {
+      .container .container__card {
+        width: 400px; } }
+    .container .container__card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-3%); }
+    .container .container__card img {
+      width: 100%;
+      height: 210px; }
+    .container .container__card .card-body {
+      padding: 15px;
+      text-align: center; }
+      .container .container__card .card-body span {
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        display: flex; }
+      .container .container__card .card-body .card-title {
+        font-weight: 700;
+        font-family: "Oswald", sans-serif;
+        color: #0028be;
+        padding: 4px; }
+      .container .container__card .card-body .card-text {
+        font-family: "Nunito", sans-serif;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 10px; }
+      .container .container__card .card-body a {
+        border: 1px solid #0028be;
+        border-radius: 4px;
+        padding: 5px;
+        font-family: "Oswald";
+        text-decoration: none; }
+        .container .container__card .card-body a:hover {
+          background-color: #001478;
+          color: #fff;
+          transition: all 800ms ease; }
+
+/*! FIN SECCION NOTICIAS*/
 .parche__portada .parche__encabezado img {
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .parche__portada .parche__encabezado img {
+      height: 270px;
+      width: 768px; } }
+  @media screen and (max-width: 480px) {
+    .parche__portada .parche__encabezado img {
+      width: 480px;
+      object-fit: cover; } }
 
 .parche__portada .dropdown2 {
   display: flex;
@@ -66,6 +478,13 @@ main {
   width: 800px;
   justify-content: left;
   margin-top: 30px; }
+  @media screen and (max-width: 768px) {
+    .parche__portada .dropdown2 {
+      width: 720px;
+      margin-top: 5px; } }
+  @media screen and (max-width: 480px) {
+    .parche__portada .dropdown2 {
+      width: 480px; } }
   .parche__portada .dropdown2 .btn {
     background-color: #0028be;
     color: #fff;
@@ -80,6 +499,13 @@ main {
   border: 1px solid #0028be;
   padding: 20px;
   gap: 10px; }
+  @media screen and (max-width: 768px) {
+    .parche__portada .parche__titulo {
+      width: 720px;
+      border: none; } }
+  @media screen and (max-width: 480px) {
+    .parche__portada .parche__titulo {
+      width: 480px; } }
   .parche__portada .parche__titulo p {
     text-transform: lowercase;
     font-size: 1.3rem;
@@ -128,21 +554,36 @@ main {
   gap: 20px;
   border: 1px solid #0028be;
   padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .parche__portada .parche__contenido {
+      border: none; } }
+  @media screen and (max-width: 480px) {
+    .parche__portada .parche__contenido {
+      width: 480px; } }
   .parche__portada .parche__contenido h3 {
     font-family: 'Oswald' , sans-serif;
     font-size: 3.7em;
     margin: 15px;
     text-transform: uppercase;
     font-weight: bold; }
-  .parche__portada .parche__contenido h5 {
+    @media screen and (max-width: 768px) {
+      .parche__portada .parche__contenido h3 {
+        align-self: center; } }
+  .parche__portada .parche__contenido h5, .parche__portada .parche__contenido #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .parche__portada .parche__contenido p {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     color: #0028be;
     margin: 10px; }
+    @media screen and (max-width: 768px) {
+      .parche__portada .parche__contenido h5, .parche__portada .parche__contenido #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .parche__portada .parche__contenido p {
+        align-self: center; } }
   .parche__portada .parche__contenido img {
     width: 630px;
     display: flex;
     align-self: center; }
+    @media screen and (max-width: 480px) {
+      .parche__portada .parche__contenido img {
+        width: 470px; } }
   .parche__portada .parche__contenido p {
     font-size: 1.2rem;
     font-family: 'Nunito', sans-serif;
@@ -174,9 +615,19 @@ main {
   width: 800px;
   border: 1px solid #0028be;
   padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .parche__portada .parche__campeones {
+      border: none; } }
+  @media screen and (max-width: 480px) {
+    .parche__portada .parche__campeones {
+      width: 480px; } }
   .parche__portada .parche__campeones .parche__card {
     width: 600px;
     align-self: center; }
+    @media screen and (max-width: 480px) {
+      .parche__portada .parche__campeones .parche__card {
+        width: 470px;
+        padding: 10px; } }
   .parche__portada .parche__campeones .parche__card__campeon {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -205,6 +656,466 @@ main {
     font-family: 'Nunito', sans-serif;
     font-weight: bold; }
 
+.main__guia .main__guias {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1250px;
+  padding: 15px;
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 120px; }
+  .main__guia .main__guias h1 {
+    color: #0028be;
+    font-family: "Oswald", sans-serif;
+    font-size: 4.5rem;
+    font-weight: bolder; }
+  .main__guia .main__guias p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold; }
+
+.main__tabla__campeones {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(10, auto);
+  padding: 20px;
+  grid-template-areas: "topl topl topl topl " "fiora  darius  renekton  riven" "jungle jungle jungle jungle" "wukong xinzhao khazix  leesin" "mid mid mid mid" "zed ahri diana ziggs" "adc adc  adc   adc" "corki ezreal cait lucian" "support support support support" "yummi thresh rakan nautilus"; }
+  @media screen and (max-width: 768px) {
+    .main__tabla__campeones {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(15, auto);
+      padding: 20px;
+      gap: 30px;
+      grid-template-areas: "topl topl" "fiora  darius" "renekton  riven" "jungle jungle" "wukong xinzhao" "khazix  leesin" "mid mid" "zed ahri" "diana ziggs" "adc adc" "corki ezreal" "cait lucian" "support support" "yummi thresh" "rakan nautilus"; } }
+  @media screen and (max-width: 480px) {
+    .main__tabla__campeones {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(15, auto);
+      grid-template-areas: "topl   topl" "fiora  darius" "renekton riven" "jungle jungle" "wukong xinzhao" "khazix leesin" "mid mid" "zed ahri" "diana ziggs" "adc adc " "corki ezreal" "cait lucian" "support support" "yummi thresh" "rakan  nautilus"; } }
+  .main__tabla__campeones .guias__linea, .main__tabla__campeones h4, .main__tabla__campeones h5, .main__tabla__campeones #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .main__tabla__campeones p, .main__tabla__campeones h6, .main__tabla__campeones .support {
+    grid-area: topl;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    font-family: "Oswald", sans-serif;
+    color: #0028be;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .main__tabla__campeones .main__row {
+    display: flex;
+    flex-direction: row;
+    transition: transform 1.2s; }
+    @media screen and (max-width: 480px) {
+      .main__tabla__campeones .main__row img {
+        height: 100px;
+        width: 100px; } }
+    .main__tabla__campeones .main__row:hover {
+      transform: scale(1.111); }
+    .main__tabla__campeones .main__row p {
+      display: flex;
+      flex-direction: column;
+      align-self: left;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      font-size: 1.3em;
+      padding: 5px; }
+      @media screen and (max-width: 480px) {
+        .main__tabla__campeones .main__row p {
+          font-size: 1rem; } }
+  .main__tabla__campeones span {
+    text-transform: uppercase;
+    color: #0028be;
+    font-weight: bold;
+    font-family: 'Oswald';
+    letter-spacing: 1.2px; }
+  .main__tabla__campeones h4 {
+    grid-area: jungle; }
+  .main__tabla__campeones h5, .main__tabla__campeones #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .main__tabla__campeones p {
+    grid-area: mid; }
+  .main__tabla__campeones h6 {
+    grid-area: adc; }
+  .main__tabla__campeones .support {
+    grid-area: support; }
+
+.guia__titulo {
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 120px; }
+  @media screen and (max-width: 480px) {
+    .guia__titulo {
+      max-width: 420; } }
+  .guia__titulo h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.4;
+    align-self: flex-start;
+    color: #0028be; }
+  .guia__titulo p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1.1px; }
+
+.container-fluid {
+  margin-top: 20px; }
+  @media screen and (max-width: 480px) {
+    .container-fluid {
+      margin-top: 0;
+      padding: 0px; } }
+
+.row {
+  width: 1000px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .row {
+      width: 720px; } }
+  @media screen and (max-width: 480px) {
+    .row {
+      width: 420px;
+      padding: 0; } }
+  .row .guia__campeon {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+    margin: 15px; }
+    @media screen and (max-width: 768px) {
+      .row .guia__campeon {
+        width: 720px;
+        margin: 0px; } }
+    @media screen and (max-width: 480px) {
+      .row .guia__campeon {
+        width: 420px; } }
+    .row .guia__campeon img {
+      height: 400px;
+      width: 800px;
+      align-self: center; }
+      @media screen and (max-width: 768px) {
+        .row .guia__campeon img {
+          height: 400px;
+          width: 700px;
+          margin-left: -50px; } }
+      @media screen and (max-width: 480px) {
+        .row .guia__campeon img {
+          width: 420px; } }
+    .row .guia__campeon .txt__map, .row .guia__campeon p {
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1.2;
+      color: #0028be;
+      display: flex;
+      align-self: start;
+      margin-top: 20px; }
+    .row .guia__campeon p {
+      font-family: "Nunito", sans-serif;
+      text-transform: lowercase;
+      font-size: 1.3rem;
+      letter-spacing: normal;
+      font-weight: 600;
+      align-self: center;
+      color: #000; }
+
+.guia__txt__main {
+  /* EXTEND SIN FUNCIONAR*/
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1.2;
+  color: #0028be;
+  display: flex;
+  align-self: start;
+  margin-top: 20px; }
+  @media screen and (max-width: 480px) {
+    .guia__txt__main {
+      padding: 0; } }
+
+.guia__runas {
+  margin: 15px;
+  display: flex;
+  align-self: center;
+  width: 100%;
+  max-width: 420px;
+  justify-content: space-around;
+  gap: 50px; }
+  @media screen and (max-width: 480px) {
+    .guia__runas {
+      margin-left: -5px;
+      justify-content: space-between; } }
+
+.guia__runas__txt {
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  align-self: center;
+  justify-content: center;
+  letter-spacing: 1.2px; }
+
+.guia__habilidades {
+  /* EXTEND SIN FUNCIONAR*/
+  display: flex;
+  width: 100%;
+  align-self: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px; }
+  @media screen and (max-width: 480px) {
+    .guia__habilidades {
+      padding: 0; } }
+  .guia__habilidades .guia__txt {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    color: #0028be;
+    display: flex;
+    align-self: start;
+    margin-top: 20px; }
+  .guia__habilidades .guia__habilidades__contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; }
+    @media screen and (max-width: 480px) {
+      .guia__habilidades .guia__habilidades__contenido img {
+        height: 50px;
+        width: 50px; } }
+    .guia__habilidades .guia__habilidades__contenido p {
+      align-self: center;
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.2px; }
+      @media screen and (max-width: 480px) {
+        .guia__habilidades .guia__habilidades__contenido p {
+          letter-spacing: 1;
+          margin-top: -5px; } }
+
+.guia__build {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .guia__build {
+      padding: 0; } }
+  .guia__build p {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    align-self: center; }
+  .guia__build .guia__txt {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.2;
+    color: #0028be;
+    display: flex;
+    align-self: start;
+    margin-top: 20px; }
+  .guia__build .guia__build__items {
+    display: flex;
+    justify-content: space-around; }
+    .guia__build .guia__build__items img {
+      height: 60px;
+      width: 60px; }
+
+.esports__titulo {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  padding: 20px; }
+  .esports__titulo p {
+    font-size: 2rem;
+    color: #001478;
+    margin: 0; }
+  .esports__titulo h1 {
+    font-size: 4.4rem;
+    margin-left: 20px;
+    color: #0028be; }
+  .esports__titulo .esports__parrafo {
+    margin: 25px 0px 25px 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px; }
+  .esports__titulo img {
+    align-self: center;
+    position: absolute;
+    left: 68%;
+    height: 120px;
+    width: 350px; }
+    @media screen and (max-width: 768px) {
+      .esports__titulo img {
+        left: 50%; } }
+    @media screen and (max-width: 768px) {
+      .esports__titulo img {
+        left: 0%;
+        position: relative; } }
+
+.esports__grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr; }
+  .esports__grids .txt__dispositivo {
+    display: none; }
+  @media screen and (max-width: 768px) {
+    .esports__grids {
+      grid-template-columns: 1fr 1fr;
+      grid-row: repeat(5, 1fr);
+      grid-template-areas: "txt txt" "card card" "card card" "card card" "card card"; }
+      .esports__grids .txt__dispositivo {
+        display: grid;
+        grid-area: txt;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.3rem;
+        max-width: 420px;
+        margin: 0px auto;
+        font-weight: bolder;
+        text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .esports__grids {
+      grid-template-columns: 1fr 1fr;
+      grid-row: repeat(9, 1fr);
+      row-gap: 20px;
+      grid-template-areas: "txt txt" "card card" "card card" "card card" "card card"; } }
+  .esports__grids .card__esports {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    font-family: "Oswald", sans-serif; }
+    @media screen and (max-width: 480px) {
+      .esports__grids .card__esports {
+        height: 200px;
+        width: 200px; } }
+    .esports__grids .card__esports .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s; }
+    .esports__grids .card__esports .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000; }
+      .esports__grids .card__esports .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .esports__grids .card__esports .front h3 {
+        position: absolute;
+        font-weight: bolder;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #000;
+        background: rgba(255, 255, 255, 0.4);
+        text-align: center; }
+    .esports__grids .card__esports .back {
+      transform: perspective(600px) rotateY(180deg);
+      background: #fff;
+      padding: 15px;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000; }
+      .esports__grids .card__esports .back .link {
+        font-weight: bold;
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px; }
+        .esports__grids .card__esports .back .link a {
+          color: #000;
+          font-family: 'Oswald' , sans-serif;
+          text-decoration: none; }
+      .esports__grids .card__esports .back h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px; }
+      .esports__grids .card__esports .back p {
+        letter-spacing: 1px; }
+    .esports__grids .card__esports:hover .front {
+      transform: perspective(600px) rotateY(180deg); }
+    .esports__grids .card__esports:hover .back {
+      transform: perspective(600px) rotateY(360deg); }
+
+@media screen and (max-width: 768px) {
+  hr {
+    max-width: 500px; } }
+
+@media screen and (max-width: 480px) {
+  hr {
+    max-width: 400px; } }
+
+.slider__titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  @media screen and (max-width: 768px) {
+    .slider__titulo {
+      text-align: center;
+      width: 720px; } }
+  @media screen and (max-width: 480px) {
+    .slider__titulo {
+      text-align: center;
+      width: 420px; } }
+  .slider__titulo h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem; }
+  .slider__titulo a {
+    font-size: 1rem;
+    width: 110px;
+    align-self: center; }
+    .slider__titulo a:hover {
+      background-color: #0028be;
+      color: #fff; }
+
+.container .carousel .carousel-inner {
+  height: auto; }
+  .container .carousel .carousel-inner .carousel-item img {
+    width: 1040px;
+    height: 700px;
+    object-fit: cover; }
+  .container .carousel .carousel-inner .carousel-item .h5--color {
+    font-size: 2rem;
+    font-weight: bold;
+    left: 10%; }
+  .container .carousel .carousel-inner .carousel-item .a--color {
+    color: red; }
+
+/*MAIN GENERAL */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center; }
+
 footer {
   display: flex;
   gap: 50px;
@@ -230,8 +1141,7 @@ footer {
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
-    padding: 20px; }
+    width: 50vw; }
     footer .contacto .contacto__info {
       display: flex;
       justify-content: space-between;
@@ -247,6 +1157,7 @@ footer {
       height: 40px;
       width: 40px; }
 
+/*NAV BAR FOOTER Y SECCION PARCHE FUERON REALIZADOS SIN @INCLUDES */
 @media screen and (max-width: 768px) {
   main {
     gap: 20px; }
@@ -254,24 +1165,6 @@ footer {
     display: block; }
   .login.hide {
     display: none; }
-  .parche__portada .parche__encabezado img {
-    height: 270px;
-    width: 768px; }
-  .parche__portada .dropdown2 {
-    margin-top: 5px;
-    width: 720px; }
-  .parche__portada .parche__titulo {
-    width: 720px;
-    max-width: 720px;
-    border: none; }
-  .parche__portada .parche__contenido {
-    border: none;
-    width: 720px;
-    max-width: 720px; }
-  .parche__portada .parche__campeones {
-    width: 720px;
-    max-width: 720px;
-    border: none; }
   footer {
     display: flex;
     flex-direction: column;
@@ -286,8 +1179,7 @@ footer {
     footer .contacto {
       width: 768px;
       display: flex;
-      flex-direction: column;
-      margin-left: 30px; }
+      flex-direction: column; }
       footer .contacto .contacto__info {
         gap: 90px;
         margin-left: -50px; }
@@ -299,37 +1191,6 @@ footer {
         padding-bottom: 10px; } }
 
 @media screen and (max-width: 480px) {
-  .parche__portada {
-    width: 480px;
-    max-width: 480px;
-    border: none; }
-    .parche__portada .parche__encabezado img {
-      width: 480px;
-      height: 480px;
-      object-fit: cover; }
-    .parche__portada img {
-      width: 480px;
-      height: 400px;
-      object-fit: cover; }
-    .parche__portada .dropdown2 {
-      width: 420px; }
-    .parche__portada .parche__titulo {
-      width: 420px;
-      max-width: 420px; }
-    .parche__portada .parche__contenido {
-      width: 420px;
-      border: none; }
-      .parche__portada .parche__contenido img {
-        width: 450px;
-        height: 112px; }
-    .parche__portada .parche__campeones {
-      max-width: 420px; }
-      .parche__portada .parche__campeones img {
-        width: 450px;
-        height: 112px;
-        align-self: center; }
-      .parche__portada .parche__campeones .parche__card {
-        max-width: 420px; }
   footer .paralelograma {
     max-width: 480px; }
   footer .contacto {
@@ -338,6 +1199,7 @@ footer {
     margin-left: 0px; }
     footer .contacto .contacto__info {
       max-width: 480px;
-      gap: 15px; }
+      gap: 15px;
+      margin-left: 10px; }
     footer .contacto .redes {
       max-width: 480px; } }
