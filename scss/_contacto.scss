@@ -1,0 +1,118 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.bodycv{
+    font-family:$urbanist , sans-serif;
+    .hero{
+        background-image: linear-gradient(to right, #0acffe 0%, #495aff 100% );
+        color: #fff;
+        .contain{
+            padding: 50px;
+            margin-left: 60px;
+            h1{
+                margin-bottom: 10px;
+                @include mb(768px){
+                margin-top: 20px;
+                }
+            }
+            p{
+                margin-bottom: 40px;
+                @include mb(768px){
+                    margin-bottom: 0;
+                }
+            }
+        }  
+    }
+    .contact-box{
+        background: #fff;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        @include mb(768px){
+            flex-direction: column;
+        }
+        h3{
+            display: grid;
+            font-weight: bolder;
+            font-size: 1.4rem;
+            color: #1c00b5;
+            margin-bottom: 30px;
+        }
+        .contact-left{
+            flex-basis: 60%;
+            padding: 40px 60px;
+            form{
+                margin-top: 5px;
+            
+            .input-row{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .input-group{
+                    flex-basis: 45%;
+                    label{
+                        margin-bottom: 5px;
+                        display: block;
+                        color: #1c00b5;
+                    }
+                    input{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 1px solid #ccc;
+                        outline: none;
+                        padding-bottom: 5px;
+                    }
+                }
+                
+            }
+            }   
+            textarea{
+                width: 100%;
+                border: 1px solid #ccc;
+                outline: none;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            button{
+                background:#1c00b5;
+                border: none;
+                color: #fff;
+                outline: none;
+                height: 35px;
+                border-radius: 30px;
+                padding: 5px 25px 5px 25px;
+                margin: 20px;
+                box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3)
+            }
+        }
+        .contact-right{
+            flex-basis: 60%;
+            padding: 40px;
+            background: #495aff;
+            tr td:first-child{
+                padding-right: 20px;
+                font-weight: bold;
+            }
+            tr td:nth-child(2){
+                color: #fff;
+                font-weight: 400;
+            }
+            tr td{
+                padding-top:10px ;
+            }
+            iframe{
+                margin-top: 5px;
+                margin-left: 70px;
+                @include mb(){
+                    margin-left: 0px;
+                    width: 350px;
+                }
+            }
+        }
+
+    }
+    
+}

@@ -183,7 +183,7 @@ hr{
     a{
         @extend %button;
         font-size: 1rem;
-        width: 110px;
+        width: auto;
         align-self: center;
         &:hover{
             background-color: $color-principal;
