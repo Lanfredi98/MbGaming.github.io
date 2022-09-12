@@ -52,6 +52,9 @@
             font-family: $oswald , sans-serif;
             font-size: 1.3rem;
             text-transform: uppercase;
+            border: 1px solid $color-principal;
+            box-shadow: $sombra;
+            border-radius:20px;
         }
     }
 }
