@@ -5,6 +5,7 @@
             position: relative;
             @include mb(768px){
                 @include size (270px,768px);
+                margin-top: 98px;
             }
             @include mb(){
                 width: 480px;
