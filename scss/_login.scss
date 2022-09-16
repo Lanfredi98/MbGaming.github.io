@@ -1,12 +1,11 @@
 
-.bg{
-    background-image: url(../imagenes/ryze.jpg)!important ;
-    background-repeat: no-repeat; /* PREGUNTAR OPCION DE COMO CENTRAR*/
-    .customHeight{
-    height: 717px;
-}
+.row {
+    overflow:hidden;
+    .col{
+        overflow:hidden;
+        #imagen1{
+            margin-left: -200px;
+        }
+    }
 }
 
-.col .customMargin{
-    margin-left: -10px;
-}

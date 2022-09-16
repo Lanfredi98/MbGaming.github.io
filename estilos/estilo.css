@@ -1135,16 +1135,17 @@ hr {
     left: 10%; }
   .container .carousel .carousel-inner .carousel-item .a--color {
     color: red; }
+  .container .carousel .carousel-inner .carousel-item .a--color1 {
+    color: #fff;
+    font-weight: 1rem;
+    text-decoration: none; }
 
-.bg {
-  background-image: url(../imagenes/ryze.jpg) !important;
-  background-repeat: no-repeat;
-  /* PREGUNTAR OPCION DE COMO CENTRAR*/ }
-  .bg .customHeight {
-    height: 717px; }
-
-.col .customMargin {
-  margin-left: -10px; }
+.row {
+  overflow: hidden; }
+  .row .col {
+    overflow: hidden; }
+    .row .col #imagen1 {
+      margin-left: -200px; }
 
 * {
   margin: 0%;
