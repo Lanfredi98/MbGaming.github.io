@@ -88,8 +88,10 @@ footer{
             max-width: 768px;
             transform: none;
             h4{
-                padding: 0px;
-                margin: 20px;
+                padding: 20px;
+                @include mb(320px){
+                    padding: 15px 0px 15px 0px;
+                }
             }
         }
         .contacto{
@@ -127,6 +129,36 @@ footer{
             }
             .redes{
                 max-width: 480px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:320px){
+    footer{
+        .paralelograma{
+            max-width: 320px;
+        }
+        .contacto{
+            width: 320px;
+            max-width: 320px;
+            margin-left:0px ;
+            .contacto__info{
+                max-width: 320px;
+                gap:15px;
+                margin-left: 10px;
+                a {
+                  font-size: 14px
+                }
+            
+            }
+            .redes{
+                max-width: 320px;
+                a{
+                    img{
+                        @include size(25px, 25px)
+                    }
+                }
             }
         }
     }
