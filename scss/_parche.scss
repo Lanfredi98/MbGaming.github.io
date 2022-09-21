@@ -19,12 +19,14 @@
         width: 800px;
         justify-content: left;
         margin-top: 30px; 
+        margin-left: 25px;
         @include mb(768px){ 
             width: 720px;
             margin-top: 5px;
         }
         @include mb(){
             width: 480px;
+            margin: 0;
         }
         .btn{
             background-color: $color-principal;
@@ -73,6 +75,9 @@
                     font-weight: 600;
                 }
             }
+            @include mb(768px){
+                font-size: 1.1rem;
+            }
         }
         .parche__btn{
             background-color: map-get($boton , fondo);
@@ -97,6 +102,7 @@
         border: 1px solid $color-principal;
         padding: 20px;
         @include mb(768px){
+            width: 768px;
             border: none;
         }
         @include mb(){
@@ -168,6 +174,7 @@
         border: 1px solid $color-principal;
         padding: 20px;
         @include mb(768px){
+            width: 768px;
             border: none;
         } @include mb(){
             width: 480px;

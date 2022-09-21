@@ -126,14 +126,12 @@ hr{
         box-shadow: 0px 1px 10px  rgba(0, 0, 0, 0.2) ;
         cursor:default;
         transition: all 400ms ease;
+        .hide{
+            display: none;
+        }
         @include mb(768px){
             width: 320px;
             height: auto;
-        }
-        .hide{
-            @include mb(768px){
-                display: none;
-            }
         }
         @include mb(){
             width: 400px;

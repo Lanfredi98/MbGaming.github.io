@@ -104,7 +104,7 @@ hr {
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
         width: 250px;
         top: -200px;
-        left: -9%;
+        left: -4%;
         text-align: left;
         font-size: 1.8rem; } }
     @media screen and (max-width: 480px) {
@@ -117,11 +117,17 @@ hr {
       transition: 1s all ease; }
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5 a:hover, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p a:hover {
         color: #fff; }
+  @media screen and (max-width: 768px) {
+    #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .tit2 {
+      position: relative;
+      top: 2px;
+      color: #fff;
+      width: 768px; } }
   #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
     left: -10px; }
     @media screen and (max-width: 768px) {
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
-        left: -9%; } }
+        left: -4%; } }
 
 .hr1 {
   position: relative;
@@ -220,7 +226,7 @@ hr {
             .slide__noticias .slide__container .main-card .cards .card .content .details .slide__txt {
               font-size: 20px;
               font-family: 'Nunito',sans-serif;
-              color: #000;
+              color: #0028be;
               text-align: left;
               padding: 5px;
               font-weight: 700; }
@@ -441,13 +447,12 @@ hr {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease; }
+    .container .container__card .hide {
+      display: none; }
     @media screen and (max-width: 768px) {
       .container .container__card {
         width: 320px;
         height: auto; } }
-    @media screen and (max-width: 768px) {
-      .container .container__card .hide {
-        display: none; } }
     @media screen and (max-width: 480px) {
       .container .container__card {
         width: 400px; } }
@@ -504,14 +509,16 @@ hr {
   align-self: center;
   width: 800px;
   justify-content: left;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-left: 25px; }
   @media screen and (max-width: 768px) {
     .parche__portada .dropdown2 {
       width: 720px;
       margin-top: 5px; } }
   @media screen and (max-width: 480px) {
     .parche__portada .dropdown2 {
-      width: 480px; } }
+      width: 480px;
+      margin: 0; } }
   .parche__portada .dropdown2 .btn {
     background-color: #0028be;
     color: #fff;
@@ -561,6 +568,9 @@ hr {
     .parche__portada .parche__titulo .parche__lorem .facebook {
       color: #0c4cfa;
       font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .parche__portada .parche__titulo .parche__lorem {
+        font-size: 1.1rem; } }
   .parche__portada .parche__titulo .parche__btn {
     background-color: #0028be;
     color: #fff;
@@ -583,6 +593,7 @@ hr {
   padding: 20px; }
   @media screen and (max-width: 768px) {
     .parche__portada .parche__contenido {
+      width: 768px;
       border: none; } }
   @media screen and (max-width: 480px) {
     .parche__portada .parche__contenido {
@@ -644,6 +655,7 @@ hr {
   padding: 20px; }
   @media screen and (max-width: 768px) {
     .parche__portada .parche__campeones {
+      width: 768px;
       border: none; } }
   @media screen and (max-width: 480px) {
     .parche__portada .parche__campeones {
@@ -1137,7 +1149,7 @@ hr {
     color: red; }
   .container .carousel .carousel-inner .carousel-item .a--color1 {
     color: #fff;
-    font-weight: 1rem;
+    font-weight: 1.2rem;
     text-decoration: none; }
 
 .row {
@@ -1246,12 +1258,12 @@ hr {
   width: 100vw;
   height: 100vh; }
   .body .container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-self: center; }
+    align-self: center;
+    margin: 0 auto; }
     .body .container .logoform, .body .container h1 {
       color: #fff;
       font-size: 2.3rem;
