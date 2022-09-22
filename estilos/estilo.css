@@ -35,6 +35,9 @@ hr {
     @media screen and (max-width: 480px) {
       .navbar .container-fluid {
         max-width: 480px; } }
+    @media screen and (max-width: 320px) {
+      .navbar .container-fluid {
+        max-width: 320px; } }
   .navbar .navbar-brand {
     font-weight: bold;
     letter-spacing: 2px;
@@ -88,8 +91,8 @@ hr {
 #carouselExampleDark {
   height: 1000px; }
   #carouselExampleDark .carousel-inner .carousel-item img {
-    height: 850px;
-    object-fit: cover; }
+    object-fit: cover;
+    height: 850px; }
   #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
     position: relative;
     top: -20px;
@@ -101,18 +104,30 @@ hr {
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
         width: 250px;
         top: -200px;
-        left: -9%;
+        left: -4%;
         text-align: left;
         font-size: 1.8rem; } }
     @media screen and (max-width: 480px) {
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
         left: 0;
         top: 0; } }
+    #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5 a, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p a {
+      text-decoration: none;
+      color: #000;
+      transition: 1s all ease; }
+      #carouselExampleDark .carousel-inner .carousel-item .carousel-caption h5 a:hover, #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p a:hover {
+        color: #fff; }
+  @media screen and (max-width: 768px) {
+    #carouselExampleDark .carousel-inner .carousel-item .carousel-caption .tit2 {
+      position: relative;
+      top: 2px;
+      color: #fff;
+      width: 768px; } }
   #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
     left: -10px; }
     @media screen and (max-width: 768px) {
       #carouselExampleDark .carousel-inner .carousel-item .carousel-caption p {
-        left: -9%; } }
+        left: -4%; } }
 
 .hr1 {
   position: relative;
@@ -126,7 +141,11 @@ hr {
     justify-content: center;
     font-size: 3rem;
     letter-spacing: 1.2px;
-    color: #0028be; }
+    color: #0028be;
+    font-weight: bold; }
+    @media screen and (max-width: 320px) {
+      .slide__text h1 {
+        text-align: center; } }
 
 .slide__noticias {
   margin-top: 20px;
@@ -142,7 +161,9 @@ hr {
     width: 100%;
     overflow: hidden;
     padding: 20px 10px 20px 10px;
-    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; }
     .slide__noticias .slide__container input[type="radio"] {
       /*se ocultalos controles del input*/
       display: none; }
@@ -213,7 +234,7 @@ hr {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin: 20px; }
+      margin: 20px 0px 20px 0px; }
       @media screen and (max-width: 480px) {
         .slide__noticias .slide__container .button {
           width: auto; } }
@@ -228,12 +249,8 @@ hr {
         .slide__noticias .slide__container .button label .active {
           width: 35px; }
     .slide__noticias .slide__container a {
-      width: 100px;
-      position: relative;
-      left: 48%; }
-      @media screen and (max-width: 480px) {
-        .slide__noticias .slide__container a {
-          left: 40%; } }
+      align-self: center;
+      justify-content: center; }
 
 @media screen and (max-width: 768px) {
   hr {
@@ -261,6 +278,9 @@ hr {
     gap: 1px;
     justify-content: center;
     align-self: center; }
+    @media screen and (max-width: 320px) {
+      .multimedia .multimedia__contenido {
+        text-align: center; } }
     .multimedia .multimedia__contenido img {
       height: 100px;
       width: 200px;
@@ -280,6 +300,9 @@ hr {
     @media screen and (max-width: 480px) {
       .multimedia .multimedia__frame {
         width: 420px; } }
+    @media screen and (max-width: 320px) {
+      .multimedia .multimedia__frame {
+        width: 300px; } }
 
 @media screen and (max-width: 768px) {
   .toast {
@@ -424,13 +447,12 @@ hr {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease; }
+    .container .container__card .hide {
+      display: none; }
     @media screen and (max-width: 768px) {
       .container .container__card {
         width: 320px;
         height: auto; } }
-    @media screen and (max-width: 768px) {
-      .container .container__card .hide {
-        display: none; } }
     @media screen and (max-width: 480px) {
       .container .container__card {
         width: 400px; } }
@@ -487,14 +509,16 @@ hr {
   align-self: center;
   width: 800px;
   justify-content: left;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-left: 25px; }
   @media screen and (max-width: 768px) {
     .parche__portada .dropdown2 {
       width: 720px;
       margin-top: 5px; } }
   @media screen and (max-width: 480px) {
     .parche__portada .dropdown2 {
-      width: 480px; } }
+      width: 480px;
+      margin: 0; } }
   .parche__portada .dropdown2 .btn {
     background-color: #0028be;
     color: #fff;
@@ -544,6 +568,9 @@ hr {
     .parche__portada .parche__titulo .parche__lorem .facebook {
       color: #0c4cfa;
       font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .parche__portada .parche__titulo .parche__lorem {
+        font-size: 1.1rem; } }
   .parche__portada .parche__titulo .parche__btn {
     background-color: #0028be;
     color: #fff;
@@ -566,6 +593,7 @@ hr {
   padding: 20px; }
   @media screen and (max-width: 768px) {
     .parche__portada .parche__contenido {
+      width: 768px;
       border: none; } }
   @media screen and (max-width: 480px) {
     .parche__portada .parche__contenido {
@@ -627,6 +655,7 @@ hr {
   padding: 20px; }
   @media screen and (max-width: 768px) {
     .parche__portada .parche__campeones {
+      width: 768px;
       border: none; } }
   @media screen and (max-width: 480px) {
     .parche__portada .parche__campeones {
@@ -1118,16 +1147,17 @@ hr {
     left: 10%; }
   .container .carousel .carousel-inner .carousel-item .a--color {
     color: red; }
+  .container .carousel .carousel-inner .carousel-item .a--color1 {
+    color: #fff;
+    font-weight: 1.2rem;
+    text-decoration: none; }
 
-.bg {
-  background-image: url(../imagenes/Ryze_0.jpg) !important;
-  background-repeat: no-repeat;
-  /* PREGUNTAR OPCION DE COMO CENTRAR*/ }
-  .bg .customHeight {
-    height: 717px; }
-
-.col .customMargin {
-  margin-left: -10px; }
+.row {
+  overflow: hidden; }
+  .row .col {
+    overflow: hidden; }
+    .row .col #imagen1 {
+      margin-left: -200px; }
 
 * {
   margin: 0%;
@@ -1228,12 +1258,12 @@ hr {
   width: 100vw;
   height: 100vh; }
   .body .container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-self: center; }
+    align-self: center;
+    margin: 0 auto; }
     .body .container .logoform, .body .container h1 {
       color: #fff;
       font-size: 2.3rem;
@@ -1335,8 +1365,12 @@ footer {
       max-width: 768px;
       transform: none; }
       footer .paralelograma h4 {
-        padding: 0px;
-        margin: 20px; }
+        padding: 20px; } }
+      @media screen and (max-width: 768px) and (max-width: 320px) {
+        footer .paralelograma h4 {
+          padding: 15px 0px 15px 0px; } }
+
+@media screen and (max-width: 768px) {
     footer .contacto {
       width: 768px;
       display: flex;
@@ -1364,3 +1398,22 @@ footer {
       margin-left: 10px; }
     footer .contacto .redes {
       max-width: 480px; } }
+
+@media screen and (max-width: 320px) {
+  footer .paralelograma {
+    max-width: 320px; }
+  footer .contacto {
+    width: 320px;
+    max-width: 320px;
+    margin-left: 0px; }
+    footer .contacto .contacto__info {
+      max-width: 320px;
+      gap: 15px;
+      margin-left: 10px; }
+      footer .contacto .contacto__info a {
+        font-size: 14px; }
+    footer .contacto .redes {
+      max-width: 320px; }
+      footer .contacto .redes a img {
+        height: 25px;
+        width: 25px; } }

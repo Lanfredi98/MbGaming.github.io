@@ -4,8 +4,8 @@
     .carousel-inner{
         .carousel-item{
             img{
+                object-fit: cover;
                 height: 850px;
-                object-fit: cover
             }
             .carousel-caption{
                 h5{
@@ -19,20 +19,38 @@
                     @include mb (768px){
                         width: 250px;
                         top: -200px;
-                         left: -9%;
+                        left: -4%;
                         text-align: left;
                         font-size: 1.8rem;
                     }
                     @include mb(){
                         left: 0;
                         top: 0;
+                    }  
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                        transition: 1s all ease;
+                        &:hover{
+                            color: #fff;
+                            
+                        }
+                    }
+                
+                }
+                .tit2{
+                    @include mb(768px){
+                        position: relative;
+                        top: 2px;
+                        color: #fff;
+                        width: 768px;
                     }
                 }
                 p{
                     @extend h5;
                     left: -10px;
                     @include mb (768px){
-                        left: -9%
+                        left: -4%
                     }
                     
                 }
@@ -55,8 +73,10 @@
        font-size: 3rem;
        letter-spacing: 1.2px;
        color: $color-principal;
-      
-
+       font-weight: bold;
+       @include mb(320px){
+        text-align: center;
+       }
     }
 }
 .slide__noticias{
@@ -80,6 +100,8 @@
         overflow: hidden;
         padding: 20px 10px 20px 10px;
         box-shadow: $sombra;
+        display: flex;
+    flex-direction: column;
         @include mb (768px){
             width: 768px;
             max-width: 768px;
@@ -139,7 +161,7 @@
                             .slide__txt{
                                 font-size: 20px;
                                 font-family: 'Nunito',sans-serif;
-                                color: #0028be;
+                                color:$color-principal;
                                 text-align: left;
                                 padding: 5px;
                                 font-weight: 700;
@@ -153,7 +175,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            margin: 20px;
+            margin: 20px 0px 20px 0px;
             @include mb (){
                 width: auto
             }
@@ -183,13 +205,9 @@
             }
         }
         a{
-            width: 100px;
-            position: relative;
-            left: 48%;
+            align-self: center;
+            justify-content: center;
             @extend %button;
-            @include mb (){
-                left: 40%;
-            }
         }
     }
 }
@@ -220,6 +238,9 @@ hr{
         gap: 1px;
         justify-content: center;
         align-self:center;
+        @include mb(320px){
+            text-align: center;
+        }
             img{
                 @include size(100px,200px);
                 display: flex;
@@ -244,6 +265,9 @@ hr{
             align-self: center;
             @include mb(){
                 width: 420px;
+            }
+            @include mb(320px){
+                width: 300px;
             }
          }   
     

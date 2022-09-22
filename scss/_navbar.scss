@@ -5,7 +5,7 @@
     background-color: $color-principal !important;
     justify-content: space-between;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px; 
     .container-fluid{
         margin: 0px;
         @include mb(768px){
@@ -13,6 +13,9 @@
         }
         @include mb(){
             max-width: 480px;
+        }
+        @include mb(320px){
+            max-width: 320px;
         }
     }
     .navbar-brand{
